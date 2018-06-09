@@ -1,9 +1,7 @@
 .title {
     &--main {
-        @include title('Lato', sans-serif, #ffda79, 2rem, 0, 400, none, 1rem, 0, center); 
-        text-transform: uppercase;
+        @include title('Raleway', sans-serif, #be9841, 4rem, 0, 400, none, 1rem, 0, right); 
         display: inline-block;
-        letter-spacing: 0.3rem;
     }
     &--main--light {
         @include title('Lato', sans-serif, $white, 2rem, 0, 300, none, 1rem, 0, center); 
@@ -33,10 +31,14 @@
         @include title('Lato', sans-serif, $white, 3rem, 0, 300, none, 2rem, 0, center);
     }
     &--page-h2 {
-        @include title('Lato', sans-serif, $white, 1.5rem, 0, 300, none, 2rem, 0, left);
+        @include title('Lato', sans-serif, $white, 1.5rem, 0, 700, none, 2rem, 0, left);
         text-transform: uppercase;
     }
     &--page-h1--light-center {
         @include title('Lato', sans-serif, $white, 2rem, 0, 400, none, 1rem, 0, center);
+    }
+    &--page-h3 {
+        @include title('Lato', sans-serif, rgba($white, 0.8), 1.5rem, 0, 300, none, 1rem, 0, left);
+        text-transform: uppercase;
     }
 }

@@ -22,7 +22,7 @@ body {
     font-size: $font-size-base;
     padding: 0;
     line-height: 3rem;
-    background: $light;
+    background: $light; 
     //@include media-breakpoint-up(md) {
         padding: 0;
         animation: body-animation 2s ease;
