@@ -4,8 +4,40 @@ ul li {
     padding: 1rem;
 }
 
-.main-header {
+.navbar {
     border-top: solid 8px $dark;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8rem;
+    width: 100%;
+    text-align: right;
+    z-index: 100;
+
+    ul li {
+        list-style: none;
+        display: inline-block;
+        color: $dark;
+        margin: 0;
+        padding: 1.5rem 0;
+
+        a {
+            margin: 0;
+            padding: 4rem 2rem 2rem 2rem;
+            font-size: 1.5rem;
+            transition: all 0.2s;
+            border-radius: 0 0 5px 5px;
+        }
+
+        a:hover {
+            background-color: rgba($dark, 0.5);
+            color: $white;
+        }
+    }
+}
+
+.main-header {
     position: relative;
     width: 100%;
     @media only screen and (min-width: $laptop) {
@@ -20,13 +52,31 @@ ul li {
             background-image: url(../img/hero-image-desktop.jpg);
         }
     }
-    &__venue{
+
+    &__left-section {
         position: absolute;
-        top: 70vh;
-        height: 20vh;
-        width: 100%;
         left: 0;
-        background-color: rgba($dark, 0.8);
+        top: 0;
+        height: 90vh;
+        width: 60%;
+        background-color: rgba($dark, 0.2);
+        clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%, 0 0);
+
+        &__logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-60%);
+            top: 5rem;
+            height: 40rem;
+        }    
+    }
+
+    &__right-section {
+        position: absolute;
+        left: 50%;
+        top: 20rem;
+
+        
     }
 }
 
