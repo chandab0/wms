@@ -1,0 +1,60 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+ul li {
+    padding: 1rem;
+}
+
+.main-header {
+    border-top: solid 8px $dark;
+    position: relative;
+    width: 100%;
+    @media only screen and (min-width: $laptop) {
+        height: 90vh;
+    }
+    /*@media only screen and (min-width: $desktop) {
+        height: 70vh;
+    }*/
+    &__hero-image {
+        @media only screen and (min-width: $laptop) {
+            @include hero-image(center);
+            background-image: url(../img/hero-image-desktop.jpg);
+        }
+    }
+    &__venue{
+        position: absolute;
+        top: 70vh;
+        height: 20vh;
+        width: 100%;
+        left: 0;
+        background-color: rgba($dark, 0.8);
+    }
+}
+
+.schedule {
+    height: 60rem;
+}
+
+.footer {
+    position: relative;
+    color: $light;
+    display: flex;
+    flex-direction: column;
+    font-weight: $font-weight-light;
+    font-size: 1.6rem;
+    background: $dark;
+    color: $white;
+
+    header {
+        padding: 6rem;
+    }
+    footer {
+        padding: 2rem 6rem;
+        background: #000;
+    }
+    .header {
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-bottom: 3rem;
+        height: 30rem;
+    }
+}

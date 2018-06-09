@@ -1,0 +1,42 @@
+.title {
+    &--main {
+        @include title('Lato', sans-serif, #ffda79, 2rem, 0, 400, none, 1rem, 0, center); 
+        text-transform: uppercase;
+        display: inline-block;
+        letter-spacing: 0.3rem;
+    }
+    &--main--light {
+        @include title('Lato', sans-serif, $white, 2rem, 0, 300, none, 1rem, 0, center); 
+        text-transform: uppercase;
+        word-spacing: .5rem;
+        letter-spacing: 0.3rem;
+    }
+    &--sub {
+        margin: auto;
+        @include title('Lato', sans-serif, $dark, 2.5rem, 0, 300, none, 1rem, 0, left); 
+        font-style: italic;
+    }
+    &--tertiary {
+        margin: auto;
+        @include title('Lato', sans-serif, rgba($white, 0.8), 2rem, 0, 300, none, 1rem, 0, left);
+        @include title('Lato', sans-serif, rgba($white, 0.8), 2rem, 0, 300, none, 1rem, 0, left);
+    }
+    &--page-h1 {
+        @include title('Lato', sans-serif, $dark, 2rem, 0, 700, none, 2rem, 1rem, left);
+        text-transform: uppercase;
+    }
+    &--page-h1--center {
+        @include title('Lato', sans-serif, $dark, 2rem, 0, 400, none, 2rem, 0, center);
+        text-transform: uppercase;
+    }
+    &--page-h1--center--white {
+        @include title('Lato', sans-serif, $white, 3rem, 0, 300, none, 2rem, 0, center);
+    }
+    &--page-h2 {
+        @include title('Lato', sans-serif, $white, 1.5rem, 0, 300, none, 2rem, 0, left);
+        text-transform: uppercase;
+    }
+    &--page-h1--light-center {
+        @include title('Lato', sans-serif, $white, 2rem, 0, 400, none, 1rem, 0, center);
+    }
+}

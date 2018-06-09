@@ -1,0 +1,48 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 50%;
+    @media only screen and (min-width: $tablet) {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: $font-size-base;
+    padding: 0;
+    line-height: 3rem;
+    background: $light;
+    //@include media-breakpoint-up(md) {
+        padding: 0;
+        animation: body-animation 2s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 4s;
+    //}
+}
+
+::selection {
+    background-color: $primary;
+    color: $white;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
