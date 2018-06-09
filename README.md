@@ -13,6 +13,8 @@
 5. Once the `vagrant up` is complete, run `vagrant ssh` to log into the vistual box using the password vagrant. Change the directory to /vagrant and run the command `npm run watch`
 6. Open another terminal, go to the same directory and run `vagrant fsnotify`
 
+NB. To install fsnotify plugin run `vagrant plugin install vagrant-fsnotify`
+
 Note: Now as we make changes in the code, the fsnotify plugin will detect the changes, replay the changes in the virtual box, webpack will detect the changes and rebuild the app automatically. Refresh the browser to see the change.
 
 ## The steps to build for production
