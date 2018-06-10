@@ -2,21 +2,20 @@ $font-family-base: 'Lato', serif;
 $font-size-base: 1.5rem;
 $line-height-base: 1.7;
 
-$primary: #005D2D;
-$secondary: #00556C;
+$primary: #362A25;
+$secondary: #be9841;
 
-$light : rgb(248, 242, 240); 
-$dark : #362A25;
+$light : #f8f2f0; 
 $white: #fff;
 $black: #000;
 
 $font-weight-light: 300;
-$body-color: $dark;
+$body-color: $light;
 
 $mobile: '335px';
 $tablet: '768px';
 $laptop: '992px';
-$desktop: '1500px';
+$desktop: '1400px';
 $grid-width: 90%;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;

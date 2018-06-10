@@ -11,7 +11,7 @@
 
 html {
     font-size: 50%;
-    @media only screen and (min-width: $tablet) {
+    @media only screen and (min-width: $laptop) {
         font-size: 62.5%;
     }
 }

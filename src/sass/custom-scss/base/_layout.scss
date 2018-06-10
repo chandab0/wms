@@ -5,23 +5,23 @@ ul li {
 }
 
 .navbar {
-    border-top: solid 8px $dark;
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8rem;
-    width: 100%;
-    text-align: right;
-    z-index: 100;
-
+    @media only screen and (min-width: $tablet) {
+        border-top: solid 8px $primary;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 8rem;
+        width: 100%;
+        text-align: right;
+        z-index: 100;
+    }
     ul li {
         list-style: none;
         display: inline-block;
-        color: $dark;
+        color: $primary;
         margin: 0;
         padding: 1.5rem 0;
-
         a {
             margin: 0;
             padding: 4rem 2rem 2rem 2rem;
@@ -29,10 +29,16 @@ ul li {
             transition: all 0.2s;
             border-radius: 0 0 5px 5px;
         }
-
         a:hover {
-            background-color: rgba($dark, 0.5);
+            background-color: rgba($primary, 0.5);
             color: $white;
+        }
+    }
+
+    &__close {
+        display: none;
+        @media only screen and (min-width: $tablet) {
+            display: block;
         }
     }
 }
@@ -40,55 +46,85 @@ ul li {
 .main-header {
     position: relative;
     width: 100%;
-    @media only screen and (min-width: $laptop) {
+    height: 50vh;
+    @media only screen and (min-width: $tablet) {
         height: 90vh;
     }
-    /*@media only screen and (min-width: $desktop) {
-        height: 70vh;
-    }*/
     &__hero-image {
-        @media only screen and (min-width: $laptop) {
+        @media only screen and (min-width: $tablet) {
             @include hero-image(center);
             background-image: url(../img/hero-image-desktop.jpg);
         }
     }
-
     &__left-section {
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 70vh;
-        width: 60%;
-        background-color: rgba($dark, 0.4);
-        clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%, 0 0);
-
+        height: 60vh;
+        background-color: rgba($primary, 0.4);
+        @media only screen and (min-width: $tablet) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 65vh;
+            width: 60%;
+            background-color: rgba($primary, 0.4);
+            clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%, 0 0);
+        }
         &__logo {
             position: absolute;
-            left: 50%;
-            transform: translateX(-60%);
-            top: 20rem;
-            height: 20rem;
-        }    
+            @media only screen and (min-width: 0) {
+            left: 3rem;
+            top: 2rem;
+            height: 5rem;
+            }
+            @media only screen and (min-width: $tablet) {
+                top: 20rem;
+                height: 20rem;
+            }
+        }
     }
-
     &__right-section {
         position: absolute;
-        left: 60%;
-        top: 15rem;
-        line-height: 6rem;
-        margin-right: 6rem;
+        left: 50%;
+        top: 30%;
+        transform: translateX(-50%);
+        line-height: 4rem;
+        border-bottom: solid 1px $primary;
         padding-bottom: 2rem;
-        border-bottom: solid 2px #be9841;
+        h1::first-line { 
+            font-weight: 900;
+            @media only screen and (min-width: $tablet) {
+                font-weight: 300;
+            }
+        }
+        @media only screen and (min-width: $tablet) {
+            left: 60%;
+            top: 15rem;
+            line-height: 5rem;
+            margin-right: 6rem;
+            padding-bottom: 2rem;
+            border-bottom: solid 2px $secondary;
+            transform: translateX(0);
+        }
     }
-
     &__venue {
-        position: absolute;
-        height: 20vh;
-        top: 70vh;
-        background: rgba($dark, 0.8);
-        width: 100%;
+        background: rgba($primary, 0.8);
+        position: relative;
+        padding: 2rem 0;
+        .row .col-1-of-2 {
+            margin-bottom: 2rem !important;
+        }
+        @media only screen and (min-width: $tablet) {
+            position: absolute;
+            height: 25vh;
+            top: 65vh;
+            width: 100%;
+        }
+        p {
+            @include title('Lato', sans-serif, rgba($white, 0.8), 1.5rem, 0, 300, none, 1rem, 0, left);
+            text-transform: uppercase;
+            line-height: 0.5rem;
+            word-spacing: 0.5rem;
+        }
     }
-    
 }
 
 .schedule {
@@ -102,9 +138,8 @@ ul li {
     flex-direction: column;
     font-weight: $font-weight-light;
     font-size: 1.6rem;
-    background: $dark;
+    background: $primary;
     color: $white;
-
     header {
         padding: 6rem;
     }
