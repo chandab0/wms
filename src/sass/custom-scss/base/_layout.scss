@@ -1,10 +1,11 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
+@import "../abstracts/animations";
 ul li {
     padding: 1rem;
 }
 
-.navbar {
+.c-navbar {
     @media only screen and (min-width: $tablet) {
         border-top: solid 8px $primary;
         background-color: transparent;
@@ -43,22 +44,59 @@ ul li {
     }
 }
 
-.main-header {
-    position: relative;
-    width: 100%;
+/*.hero {
+    @include hero-image(top);
+}*/
+
+.carousel, .carousel-item, .carousel-inner {
+    position: absolute;
     height: 60vh;
     @media only screen and (min-width: $tablet) {
         height: 90vh;
     }
+}
+
+.main-header {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+
+    figure {
+        margin: 0;
+    }
+
+    @media only screen and (min-width: $tablet) {
+        height: 90vh;
+    }
     &__hero-image {
-        @include hero-image(center);
+        @include hero-image(top);
         background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-mobile.jpg);
+
         @media only screen and (min-width: $tablet) {
             background-image: url(../img/hero-image-desktop.jpg);
         }
     }
+
+    &__hero-image-1 {
+        @include hero-image(top);
+        background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-1-mobile.jpg);
+
+        @media only screen and (min-width: $tablet) {
+            background-image: url(../img/hero-image-1-desktop.jpg);
+        }
+    }
+    
+
+    &__hero-image-2 {
+        @include hero-image(top);
+        background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-2-mobile.jpg);
+
+        @media only screen and (min-width: $tablet) {
+            background-image: url(../img/hero-image-2-desktop.jpg);
+        }
+    }
+
     &__left-section {
-        height: 60vh;
         background-color: rgba($primary, 0.4);
         @media only screen and (min-width: $tablet) {
             position: absolute;
@@ -108,7 +146,7 @@ ul li {
         background: rgba($primary, 0.8);
         position: relative;
         padding: 2rem 0;
-        .row .col-1-of-2 {
+        .c-row .col-1-of-2 {
             margin-bottom: 2rem !important;
         }
         @media only screen and (min-width: $tablet) {
@@ -133,8 +171,6 @@ ul li {
 .footer {
     position: relative;
     color: $light;
-    display: flex;
-    flex-direction: column;
     font-weight: $font-weight-light;
     font-size: 1.6rem;
     background: $primary;
