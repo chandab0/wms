@@ -6,17 +6,26 @@ ul li {
 }
 
 .c-navbar {
+    transition: all 0.5s;
     @media only screen and (min-width: $tablet) {
-        border-top: solid 8px $primary;
+        border-top: solid 4px $secondary;
         background-color: transparent;
         position: absolute;
         top: 0;
         left: 0;
-        height: 8rem;
+        //height: 8rem;
         width: 100%;
         text-align: right;
         z-index: 100;
     }
+
+    &__sticky {
+        position: fixed;
+        background-color: $white;
+        color: $secondary;
+        border-bottom: solid 1px $secondary;
+    }
+
     ul li {
         list-style: none;
         display: inline-block;
@@ -24,18 +33,32 @@ ul li {
         margin: 0;
         padding: 1.5rem 0;
         a {
-            margin: 0;
-            padding: 4rem 2rem 2rem 2rem;
+            margin: 0 2rem;
+            padding: 4rem 0 1rem 0;
             font-size: 1.5rem;
             transition: all 0.2s;
             border-radius: 0 0 5px 5px;
+            position: relative;
+            cursor: pointer;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                bottom: 0;
+                left: 0;
+                background-color: $secondary;
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all 0.3s ease-in-out 0s;
+            }
         }
-        a:hover {
-            background-color: rgba($primary, 0.5);
-            color: $white;
+        a:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
         }
     }
-
     &__close {
         display: none;
         @media only screen and (min-width: $tablet) {
@@ -48,7 +71,9 @@ ul li {
     @include hero-image(top);
 }*/
 
-.carousel, .carousel-item, .carousel-inner {
+.carousel,
+.carousel-item,
+.carousel-inner {
     position: absolute;
     height: 60vh;
     @media only screen and (min-width: $tablet) {
@@ -60,42 +85,33 @@ ul li {
     position: relative;
     width: 100%;
     height: 90vh;
-
     figure {
         margin: 0;
     }
-
     @media only screen and (min-width: $tablet) {
         height: 90vh;
     }
     &__hero-image {
         @include hero-image(top);
         background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-mobile.jpg);
-
         @media only screen and (min-width: $tablet) {
             background-image: url(../img/hero-image-desktop.jpg);
         }
     }
-
     &__hero-image-1 {
         @include hero-image(top);
         background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-1-mobile.jpg);
-
         @media only screen and (min-width: $tablet) {
             background-image: url(../img/hero-image-1-desktop.jpg);
         }
     }
-    
-
     &__hero-image-2 {
         @include hero-image(top);
         background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-2-mobile.jpg);
-
         @media only screen and (min-width: $tablet) {
             background-image: url(../img/hero-image-2-desktop.jpg);
         }
     }
-
     &__left-section {
         background-color: rgba($primary, 0.4);
         @media only screen and (min-width: $tablet) {
@@ -110,9 +126,9 @@ ul li {
         &__logo {
             position: absolute;
             @media only screen and (min-width: 0) {
-            left: 3rem;
-            top: 2rem;
-            height: 5rem;
+                left: 3rem;
+                top: 2rem;
+                height: 5rem;
             }
             @media only screen and (min-width: $tablet) {
                 left: 50%;
@@ -128,7 +144,7 @@ ul li {
         top: 30%;
         transform: translateX(-50%);
         line-height: 4rem;
-        h1::first-line { 
+        h1::first-line {
             font-weight: 900;
             @media only screen and (min-width: $tablet) {
                 font-weight: 300;
@@ -143,7 +159,7 @@ ul li {
         }
     }
     &__venue {
-        background: rgba($primary, 0.8);
+        background: rgba($primary, 0.9);
         position: relative;
         padding: 2rem 0;
         .c-row .col-1-of-2 {
@@ -158,8 +174,9 @@ ul li {
         p {
             @include title('Lato', sans-serif, rgba($white, 0.8), 1.5rem, 0, 300, none, 1rem, 0, left);
             text-transform: uppercase;
-            line-height: 0.5rem;
+            line-height: 1.2rem;
             word-spacing: 0.5rem;
+            padding: 0;
         }
     }
 }
