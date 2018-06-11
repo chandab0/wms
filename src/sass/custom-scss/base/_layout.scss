@@ -162,6 +162,7 @@ ul li {
         background: rgba($primary, 0.9);
         position: relative;
         padding: 2rem 0;
+        border-top: solid 2px $white;
         .c-row .col-1-of-2 {
             margin-bottom: 2rem !important;
         }
@@ -177,6 +178,7 @@ ul li {
             line-height: 1.2rem;
             word-spacing: 0.5rem;
             padding: 0;
+            letter-spacing: 0.2rem;
         }
     }
 }
