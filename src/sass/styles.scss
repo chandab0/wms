@@ -3,7 +3,17 @@
 @import "custom-scss/abstracts/animations";
 @import "custom-scss/base/base";
 @import "custom-scss/base/typography";
-@import "custom-scss/base/layout";
 @import "custom-scss/base/grid";
+@import "custom-scss/base/utils";
+
+@import "custom-scss/layout/common/navbar";
+@import "custom-scss/layout/common/footer";
+
+@import "custom-scss/layout/home/header";
+@import "custom-scss/layout/home/schedule";
+@import "custom-scss/layout/home/speaker";
+
+@import "custom-scss/layout/sponsor/header";
+@import "custom-scss/layout/sponsor/package";
 
 @import "../../node_modules/aos/src/sass/aos.scss";

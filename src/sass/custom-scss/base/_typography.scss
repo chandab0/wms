@@ -15,9 +15,16 @@
         text-transform: uppercase;
         word-spacing: 0.5rem;
     }
+    &--secondary--white {
+        @include title('Lato', sans-serif, $white, 2rem, 0, 300, none, 1rem, 0, center);
+        @media only screen and (min-width: $tablet) {
+            @include title('Lato', sans-serif, $white, 2rem, 0, 700, none, 1rem, 0, right);
+        }
+        text-transform: uppercase;
+        word-spacing: 0.5rem;
+    }
     &--tertiary {
         margin: auto;
-        @include title('Lato', sans-serif, rgba($white, 0.8), 2rem, 0, 300, none, 1rem, 0, left);
         @include title('Lato', sans-serif, rgba($white, 0.8), 2rem, 0, 300, none, 1rem, 0, left);
     }
     &--page-h1 {
@@ -32,11 +39,11 @@
         @include title('Lato', sans-serif, $white, 3rem, 0, 300, none, 2rem, 0, center);
     }
     &--page-h2 {
-        @include title('Lato', sans-serif, $white, 1.5rem, 0, 700, none, 2rem, 0, left);
+        @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 700, none, 2rem, 0, left);
         text-transform: uppercase;
     }
     &--page-h1--light-center {
-        @include title('Lato', sans-serif, $white, 2rem, 0, 400, none, 1rem, 0, center);
+        @include title('Lato', sans-serif, $secondary, 2rem, 0, 400, none, 1rem, 0, center);
     }
     &--page-h3 {
         @include title('Lato', sans-serif, rgba($white, 0.8), 1.5rem, 0, 300, none, 1rem, 0, left);

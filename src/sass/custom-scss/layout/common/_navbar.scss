@@ -1,0 +1,65 @@
+.c-navbar {
+    transition: all 0.5s;
+    @media only screen and (min-width: $tablet) {
+        border-top: solid 4px $secondary;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0; //height: 8rem;
+        width: 100%;
+        text-align: right;
+        z-index: 100;
+    }
+    &__sticky {
+        position: fixed;
+        background-color: $light;
+        color: $secondary;
+        border-bottom: solid 1px $secondary;
+    }
+    ul li {
+        list-style: none;
+        display: inline-block;
+        color: $primary;
+        margin: 0;
+        padding: 1.5rem 0;
+        a {
+            &,
+            :link,
+            :visited,
+            :active,
+            :focus {
+                margin: 0 2rem;
+                padding: 4rem 0 1rem 0;
+                font-size: 1.5rem;
+                transition: all 0.2s;
+                border-radius: 0 0 5px 5px;
+                position: relative;
+                cursor: pointer;
+                text-decoration: none;
+                color: $primary;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                bottom: 0;
+                left: 0;
+                background-color: $secondary;
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all 0.3s ease-in-out 0s;
+            }
+        }
+        a:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+    }
+    &__close {
+        display: none;
+        @media only screen and (min-width: $tablet) {
+            display: block;
+        }
+    }
+}

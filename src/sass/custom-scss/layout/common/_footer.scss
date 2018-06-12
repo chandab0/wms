@@ -1,0 +1,21 @@
+.footer {
+    position: relative;
+    color: $light;
+    font-weight: $font-weight-light;
+    font-size: 1.6rem;
+    background: $primary;
+    color: $white;
+    header {
+        padding: 6rem;
+    }
+    footer {
+        padding: 2rem 6rem;
+        background: $black;
+    }
+    .header {
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-bottom: 3rem;
+        height: 30rem;
+    }
+}

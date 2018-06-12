@@ -1,0 +1,65 @@
+.packages {
+    ul li {
+        padding: 1rem;
+        background-image: url('../img/check.png');
+        background-repeat: no-repeat;
+        padding-left: 7rem;
+    }
+
+    background: $light;
+    width: 100%;
+    padding: 8rem 0;
+    
+    &__shift {
+        margin-top: -20rem;
+    }
+    &__pkg-header {
+        position: relative;
+        z-index: 2;
+        border-radius: 1rem;
+        padding: 4rem;
+        background-color: $secondary;
+        color: $white;
+        box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        text-align: right;
+        &__name-text {
+            @include title('Lato', sans-serif, $white, 2rem, 0, 700, none, 1rem, 0, right);
+            line-height: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            word-spacing: 1rem;
+        }
+        &__dollar-text {
+            @include title('Lato', sans-serif, $white, 3rem, 0, 400, none, 0, 1rem, right);
+            display: inline-block;
+        }
+        &__amount-text {
+            @include title('Lato', sans-serif, $white, 6rem, 0, 300, none, 2rem, 0, right);
+            padding-bottom: 6rem;
+        }
+        &__opportunity-text {
+            @include title('Lato', sans-serif, rgba($white, 0.7), 1.5rem, 0, 400, none, 1rem, 0, right);
+            text-transform: uppercase;
+            line-height: 1rem;
+            letter-spacing: 0.3rem;
+            word-spacing: 0.5rem;
+        }
+    }
+
+    &__features {
+        border-radius: 1rem;
+        position: relative;
+        padding: 15rem 10rem;
+        background: $white;
+        margin-left: -10rem;
+        z-index: 1;
+        box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+        ul {
+            
+            vertical-align:middle;
+            list-style: none;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.sponsor-header {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    text-align: right;
+    figure {
+        margin: 0;
+    }
+    @media only screen and (min-width: $tablet) {
+        height: 70vh;
+    }
+    &__hero-image {
+        @include hero-image(center);
+        background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-mobile.jpg);
+        @media only screen and (min-width: $tablet) {
+            background-image: url(../img/hero-image-desktop.jpg);
+        }
+    }
+    &__title {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translateX(-50%);
+        line-height: 4rem;
+        h1::first-line {
+            font-weight: 900;
+            @media only screen and (min-width: $tablet) {
+                font-weight: 300;
+            }
+        }
+        @media only screen and (min-width: $tablet) {
+            left: 60%;
+            top: 15rem;
+            line-height: 5rem;
+            //margin-right: 6rem;
+            transform: translateX(0);
+        }
+    }
+
+}

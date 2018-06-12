@@ -31,6 +31,10 @@ body {
     //}
 }
 
+ul li {
+    padding: 1rem;
+}
+
 ::selection {
     background-color: $primary;
     color: $white;

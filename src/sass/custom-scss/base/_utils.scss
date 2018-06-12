@@ -1,0 +1,82 @@
+.icon {
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    margin-right: 1.5rem;
+    padding: 0.5rem;
+    background: $secondary;
+    border-radius: 50%;
+}
+
+.carousel,
+.carousel-item,
+.carousel-inner {
+    position: absolute;
+    height: 60vh;
+    @media only screen and (min-width: $tablet) {
+        height: 90vh;
+    }
+}
+
+.c-btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.5rem 2rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.5rem;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+        margin: 2rem 0;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($black,.2);
+    }
+    
+    &--white {
+        background-color: $white;
+        color: $secondary;
+
+        &::after {
+            background-color: $white;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+}
+
+strong {
+    font-weight: 700;
+}
