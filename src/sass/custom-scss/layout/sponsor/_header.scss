@@ -29,11 +29,19 @@
             }
         }
         @media only screen and (min-width: $tablet) {
-            left: 60%;
+            left: 50%;
             top: 15rem;
             line-height: 5rem;
             //margin-right: 6rem;
             transform: translateX(0);
+        }
+
+        @media only screen and (min-width: $laptop) {
+            left: 60%;
+        }
+
+        @media only screen and (min-width: $desktop) {
+            left: 65%;
         }
     }
 
