@@ -9,6 +9,12 @@
     @media only screen and (min-width: $tablet) {
         height: 70vh;
     }
+    &__logo {
+        position: absolute;
+        left: 3rem;
+        top: 2rem;
+        height: 5rem;
+    }
     &__hero-image {
         @include hero-image(center);
         background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-mobile.jpg);
@@ -31,18 +37,14 @@
         @media only screen and (min-width: $tablet) {
             left: 50%;
             top: 15rem;
-            line-height: 5rem;
-            //margin-right: 6rem;
+            line-height: 5rem; //margin-right: 6rem;
             transform: translateX(0);
         }
-
         @media only screen and (min-width: $laptop) {
             left: 60%;
         }
-
         @media only screen and (min-width: $desktop) {
             left: 65%;
         }
     }
-
 }
