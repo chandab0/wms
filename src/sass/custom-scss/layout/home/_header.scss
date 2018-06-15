@@ -76,7 +76,7 @@
         }
     }
     &__venue {
-        background: rgba($primary, 0.9);
+        background: rgba($primary, 0.95);
         position: relative;
         padding: 2rem 0;
         border-top: solid 2px $white;
@@ -89,6 +89,12 @@
             top: 65vh;
             width: 100%;
         }
+
+        &__header {
+            @include title('Raleway', sans-serif, $white, 1.5rem, 0.2rem, 700, none, 2rem, 0, left);
+            text-transform: uppercase;    
+        }
+
         p {
             @include title('Lato', sans-serif, rgba($white, 0.8), 1.5rem, 0, 300, none, 1rem, 0, left);
             text-transform: uppercase;

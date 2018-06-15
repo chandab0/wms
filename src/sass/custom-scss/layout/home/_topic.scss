@@ -1,0 +1,14 @@
+.topics {
+    background-color: $secondary;
+    color: $light;
+    padding: 5rem;
+
+    $content-class: content;
+    
+    @for $i from 1 through 3 {
+        &__#{$content-class}--#{$i} {
+            @include title('Lato', sans-serif, $light, 2rem, 0, 400, none, 2rem, 1rem, left);
+            padding-left: $i * 5rem;
+        }
+    }
+}

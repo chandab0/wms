@@ -1,0 +1,22 @@
+.quotes {
+    &__quote {
+        @include title('Lato', sans-serif, $primary, 3rem, 0, 300, none, 2rem, 0, center);
+    }
+
+    #quote-carousel, #quote-carousel > .carousel-inner, #quote-carousel > .carousel-item{
+        height: 15rem;
+    }
+
+    #quote-carousel {
+        //background: $primary;
+        margin: 5rem;
+    }
+
+    .carousel-indicators li {
+        background-color: rgba($primary, 0.2);
+    }
+
+    .carousel-indicators .active {
+        background-color: rgba($primary, 0.6);
+    }
+}
