@@ -39,14 +39,14 @@
         @include title('Lato', sans-serif, $white, 3rem, 0, 300, none, 2rem, 0, center);
     }
     &--page-h2 {
-        @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 700, none, 2rem, 0, left);
+        @include title('Raleway', sans-serif, $white, 1.5rem, 0.2rem, 700, none, 2rem, 0, left);
         text-transform: uppercase;
     }
     &--page-h1--light-center {
         @include title('Lato', sans-serif, $secondary, 2rem, 0, 400, none, 1rem, 0, center);
     }
     &--page-h3 {
-        @include title('Lato', sans-serif, rgba($white, 0.8), 1.5rem, 0, 300, none, 1rem, 0, left);
+        @include title('Lato', sans-serif, $light, 1.5rem, 0, 300, none, 1rem, 0, left);
         text-transform: uppercase;
         word-spacing: 1rem;
     }
