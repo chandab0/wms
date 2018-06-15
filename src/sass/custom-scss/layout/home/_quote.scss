@@ -1,15 +1,31 @@
 .quotes {
+
     &__quote {
         @include title('Lato', sans-serif, $primary, 3rem, 0, 300, none, 2rem, 0, center);
     }
 
     #quote-carousel, #quote-carousel > .carousel-inner, #quote-carousel > .carousel-item{
-        height: 15rem;
+        height: 50rem;
+
+        @media only screen and (min-width: $mobile) {
+            height: 38rem;
+        }
+
+        @media only screen and (min-width: $tablet) {
+            height: 15rem;
+        }
+    }
+
+    .carousel-item {
+        padding-top: 5rem;
+        @media only screen and (min-width: $tablet) {
+            padding-top: 0;
+        }
     }
 
     #quote-carousel {
         //background: $primary;
-        margin: 5rem;
+        margin: 5rem;  
     }
 
     .carousel-indicators li {
@@ -19,4 +35,4 @@
     .carousel-indicators .active {
         background-color: rgba($primary, 0.6);
     }
-}
+}   

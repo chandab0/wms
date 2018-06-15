@@ -21,16 +21,22 @@
     
     border-radius: 10px;
     figure > img {
-        width: 30rem;
+        width: 100%;
+        max-width: 30rem;
         height: 30rem;
     }
 
-    section {
-        background: $white;
+    h2 {
+        @include title('Lato', sans-serif, $primary, 2rem, 0, 900, none, 0, 0, left);
     }
 
-    footer {
-        background: $secondary;
-        color: $white;
+    h3 {
+        @include title('Lato', sans-serif, rgba($primary, 0.6), 2rem, 0, 400, none, 0.5rem, 0, left);
     }
+
+    p {
+        @include title('Lato', sans-serif, $primary, 1.6rem, 0, 400, none, 1rem, 0, left);
+        line-height: 3rem;
+    }
+
 }

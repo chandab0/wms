@@ -5,10 +5,13 @@
 
     $content-class: content;
     
-    @for $i from 1 through 3 {
-        &__#{$content-class}--#{$i} {
+    @for $i from 0 through 2 {
+        &__#{$content-class}--#{$i+1} {
             @include title('Lato', sans-serif, $light, 2rem, 0, 400, none, 2rem, 1rem, left);
-            padding-left: $i * 5rem;
+            padding-left: 0;
+            @media only screen and (min-width: $desktop) {
+            padding-left: $i * 2rem;
+            }
         }
     }
 }
