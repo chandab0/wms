@@ -90,8 +90,9 @@
             width: 100%;
         }
 
+        
         &__header {
-            @include title('Raleway', sans-serif, $white, 1.5rem, 0.2rem, 700, none, 2rem, 0, left);
+            @include title('Lato', sans-serif, $white, 1.5rem, 0.2rem, 700, none, 2rem, 0, left);
             text-transform: uppercase;    
         }
 
