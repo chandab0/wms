@@ -1,16 +1,14 @@
 .c-navbar {
-    transition: all 0.5s;
-    @media only screen and (min-width: $tablet) {
-        border-top: solid 4px $secondary;
-        background-color: transparent;
-        position: absolute;
-        top: 0;
-        left: 0; //height: 8rem;
-        width: 100%;
-        text-align: right;
-        z-index: 100;
-    }
-    
+    transition: all 0.5s; //@media only screen and (min-width: $tablet) {
+    border-top: solid 4px $secondary;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    z-index: 100;
+    height: 8rem; //}
     &__sticky {
         position: fixed;
         background-color: $white;
@@ -18,11 +16,14 @@
         border-bottom: solid 1px $secondary;
     }
     ul li {
-        list-style: none;
-        display: inline-block;
-        color: $primary;
-        margin: 0;
-        padding: 1.5rem 0;
+        display: none;
+        @media only screen and (min-width: $tablet) {
+            list-style: none;
+            display: inline-block;
+            color: $primary;
+            margin: 0;
+            padding: 1.5rem 0;
+        }
         a {
             &,
             :link,
@@ -57,10 +58,48 @@
             transform: scaleX(1);
         }
     }
-    &__close {
+    &__tab-menu-btn {
         display: none;
         @media only screen and (min-width: $tablet) {
             display: block;
+        }
+    }
+    &__mobile-menu {
+        ul li {
+            display: block;
+            height: 6rem;
+            width: 100%;
+            text-align: left;
+            padding: 2rem 4rem;
+            color: $primary;
+            &:hover {
+                background: $secondary;
+                color: $white;
+                a {
+                    color: $white;
+                }
+            }
+            a {
+                &,
+                :link,
+                :visited,
+                :active,
+                :focus {
+                    color: $primary;
+                }
+                &:before {
+                    display: none;
+                }
+            }
+        }
+        ul {
+            background: rgba($white, 0.9);
+        }
+    }
+    &__mob-menu-btn {
+        display: inherit;
+        @media only screen and (min-width: $tablet) {
+            display: none!important;
         }
     }
 }
