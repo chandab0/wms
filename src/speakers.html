@@ -30,36 +30,52 @@
 
 <body>
 
-    <nav id="navbar" class="c-navbar c-navbar__close">
+    <nav id="navbar" class="c-navbar">
+
+        <button class="hamburger hamburger--collapse c-navbar__mob-menu-btn" type="button" onclick="toggleHamburger()">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
         <ul>
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.html#top" class="same-page" onclick="closeMobMenu()">Home</a>
             </li>
             <li>
-                <a href="index.html#speaker_list">Speaker</a>
+                <a href="index.html#speaker_list" class="same-page" onclick="closeMobMenu()">Speaker</a>
             </li>
             <li>
-                <a>Schedule</a>
+                <a onclick="closeMobMenu()">Schedule</a>
             </li>
             <li>
-                <a>Kotler Award</a>
+                <a onclick="closeMobMenu()">Kotler Award</a>
             </li>
             <li>
-                <a href="sponsor.html">Be Sponsor</a>
+                <a href="sponsor.html" onclick="closeMobMenu()">Be Sponsor</a>
             </li>
             <li>
-                <a href="http://www.worldmarketingsummitgroup.org/ ">WMS</a>
+                <a href="http://www.worldmarketingsummitgroup.org/" onclick="closeMobMenu()">WMS</a>
             </li>
             <li>
-                <a>Contact Us</a>
+                <a onclick="closeMobMenu()">Contact Us</a>
             </li>
         </ul>
+
     </nav>
 
+    <header class="sponsor-header">
+            <figure>
+                <div class="sponsor-header__hero-image">
+                </div>
     
-  
-
-    <section class="speakers">
+                <img class="sponsor-header__logo" src="./img/web-wms-logo-1024x1024.png">
+    
+            </figure>
+            <div class="sponsor-header__title">
+                <h1 class="title--main">Speakers</h1>
+            </div>
+        </header>
+        <section class="speakers">
         <div class="speakers__container" id="speaker_list">
             <h1 class="speakers__container__header">Speakers</h1>
             <div class="c-row speaker" data-aos="fade-up" data-aos-duration="1500" id="speaker_1">
@@ -82,13 +98,22 @@
                         strategic marketing as serving as “the link between society’s needs and its pattern of industrial
                         response.”[1]
 
-                        <br><br> Kotler helped create the field of social marketing that focuses on helping individuals and
-                        groups modify their behaviors toward healthier and safer living styles.
+                        <br>
+                        <br> Kotler helped create the field of social marketing that focuses on helping individuals and groups
+                        modify their behaviors toward healthier and safer living styles.
 
-                        <br><br>Kotler’s latest work focuses on economic justice and the shortcomings of capitalism. He published
+                        <br>
+                        <br>Kotler’s latest work focuses on economic justice and the shortcomings of capitalism. He published
                         Confronting Capitalism: Real Solutions for a Troubled Economic System in 2015 and Democracy in Decline
                         Rebuilding its Future in 2016. </p>
-                    <span><a href="https://www.facebook.com"><img class="social-icon" src="./img/facebook.svg"></a></span><span><img class="social-icon" src="./img/twitter.svg"></span>
+                    <span>
+                        <a href="https://www.facebook.com">
+                            <img class="social-icon" src="./img/facebook.svg">
+                        </a>
+                    </span>
+                    <span>
+                        <img class="social-icon" src="./img/twitter.svg">
+                    </span>
 
                 </div>
             </div>
@@ -104,22 +129,32 @@
                 <div class="col-2-of-3">
                     <h2>Prof. Marc Oliver Opresnik</h2>
                     <h3>Marketing Professor</h3>
-                    <p>Marketing Professor, Luebeck University of Applied Sciences, Germany,<br><br> Marketing Professor and
-                        Member of the Board of Directors, SGMI Management Institute St. Gallen, Switzerland<br><br> Dr. Marc
-                        Opresnik is a distinguished professor of Marketing and a member of the Board of Directors at SGMI
-                        Management Institute St. Gallen in Switzerland, a leading international business school. He is President
-                        of Prof. Dr. Opresnik Management Consulting. Since January 2008, Dr. Opresnik is a professor of Business
-                        Economics, in particular Marketing and Management at the Luebeck University of Applied Sciences and
-                        a visiting professor to other international universities such as the East China University of Science
-                        and Technology (ECUST) in Shanghai and European Business School in London. Dr. Opresnik is the author
-                        of numerous articles and management books, including the internationally acclaimed marketing principles
-                        text “Marketing – A Relationship Perspective”. Along with Kevin Keller and Phil Kotler, the world’s
-                        most renowned marketing professor, he is co-author of the German edition of “Marketing Management”,
-                        the “bible of marketing”. With effect from March 2014 he was appointed Chief Research Officer at
-                        Kotler Impact Inc., the internationally operating company of Phil Kotler. With his many years of
-                        international experience as a coach, keynote speaker and consultant, Marc Opresnik is one of the
-                        world’s most renowned marketing, management and negotiation experts.</p>
-                    <span><a href="https://www.facebook.com"><img class="social-icon" src="./img/facebook.svg"></a></span><span><img class="social-icon" src="./img/twitter.svg"></span>
+                    <p>Marketing Professor, Luebeck University of Applied Sciences, Germany,
+                        <br>
+                        <br> Marketing Professor and Member of the Board of Directors, SGMI Management Institute St. Gallen,
+                        Switzerland
+                        <br>
+                        <br> Dr. Marc Opresnik is a distinguished professor of Marketing and a member of the Board of Directors
+                        at SGMI Management Institute St. Gallen in Switzerland, a leading international business school.
+                        He is President of Prof. Dr. Opresnik Management Consulting. Since January 2008, Dr. Opresnik is
+                        a professor of Business Economics, in particular Marketing and Management at the Luebeck University
+                        of Applied Sciences and a visiting professor to other international universities such as the East
+                        China University of Science and Technology (ECUST) in Shanghai and European Business School in London.
+                        Dr. Opresnik is the author of numerous articles and management books, including the internationally
+                        acclaimed marketing principles text “Marketing – A Relationship Perspective”. Along with Kevin Keller
+                        and Phil Kotler, the world’s most renowned marketing professor, he is co-author of the German edition
+                        of “Marketing Management”, the “bible of marketing”. With effect from March 2014 he was appointed
+                        Chief Research Officer at Kotler Impact Inc., the internationally operating company of Phil Kotler.
+                        With his many years of international experience as a coach, keynote speaker and consultant, Marc
+                        Opresnik is one of the world’s most renowned marketing, management and negotiation experts.</p>
+                    <span>
+                        <a href="https://www.facebook.com">
+                            <img class="social-icon" src="./img/facebook.svg">
+                        </a>
+                    </span>
+                    <span>
+                        <img class="social-icon" src="./img/twitter.svg">
+                    </span>
 
                 </div>
             </div>
@@ -141,14 +176,21 @@
                         experience), the academic (innovative and disruptive teacher of marketing, innovation and creativity
                         at ESADE Business School and other business schools in Spain) and the musical (singer-songwriter
                         with two published albums). He’s written two books on what business leaders can learn from musicians.
-                        <br><br> Salva Rock gives high impact talks with an edutainment style (education & entertainment),
-                        using his electric guitar to do so. He aims to deprogram and transform the audience pushing them
-                        to ask new questions and think differently. So now… ARE YOU READY TO ROCK…??
-                        <br><br> Website: <a href="http://www.salvarock.es">www.salvarock.es</a>
-                        <br> Instagram: <a href="https://www.instagram.com/salvarock.es/">https://www.instagram.com/salvarock.es/</a>
-                        <br> FB: <a href="https://www.facebook.com/salvador.lopezj">https://www.facebook.com/salvador.lopezj</a>
-                        <br> Twitter: <a href="https://twitter.com/viajerosonico?lang=es">https://twitter.com/viajerosonico?lang=es</a>
-                        <br><br> If you need a longer and more detailed BIO, then you can add this:
+                        <br>
+                        <br> Salva Rock gives high impact talks with an edutainment style (education & entertainment), using
+                        his electric guitar to do so. He aims to deprogram and transform the audience pushing them to ask
+                        new questions and think differently. So now… ARE YOU READY TO ROCK…??
+                        <br>
+                        <br> Website:
+                        <a href="http://www.salvarock.es">www.salvarock.es</a>
+                        <br> Instagram:
+                        <a href="https://www.instagram.com/salvarock.es/">https://www.instagram.com/salvarock.es/</a>
+                        <br> FB:
+                        <a href="https://www.facebook.com/salvador.lopezj">https://www.facebook.com/salvador.lopezj</a>
+                        <br> Twitter:
+                        <a href="https://twitter.com/viajerosonico?lang=es">https://twitter.com/viajerosonico?lang=es</a>
+                        <br>
+                        <br> If you need a longer and more detailed BIO, then you can add this:
                         <br> Bachelor in Economy and Business Administration (Universitat Pompeu Fabra de Barcelona), Post-graduated
                         in Market Research (AEDEMO, Spain), Post-graduated in Marketing Management (ESADE Business School,
                         Spain)
@@ -156,8 +198,8 @@
                         professor at INEDE Business School (Valencia, Spain).
                         <br> Former Head of Marketing at Grupo Bonmacor and Vitae Natural Nutrition, and Head of Market Intelligence
                         at Terra Networks.
-                        <br> He has written two books: “ROCKvolución Empresarial” and “Persiguiendo la Excelencia” (iBook)
-                        about what business leaders can learn from musicians.
+                        <br> He has written two books: “ROCKvolución Empresarial” and “Persiguiendo la Excelencia” (iBook) about
+                        what business leaders can learn from musicians.
                         <br> He has released two albums as singer-songwriter: “10 Knots”(2013) and “Translúcid” (2017).
                         <br> He had his own radio show talking about music, musicians and organisations.
                     </p>
@@ -176,12 +218,12 @@
                             <img class="social-icon" src="./img/instagram.svg">
                         </a>
                     </span>
-                    
+
                 </div>
             </div>
         </div>
     </section>
-    
+
 
     <footer class="footer">
         <header class="header">

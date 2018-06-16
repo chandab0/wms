@@ -30,33 +30,41 @@
 
 <body>
 
-    <nav id="navbar" class="c-navbar c-navbar__close">
+    <nav id="navbar" class="c-navbar">
+
+        <button class="hamburger hamburger--collapse c-navbar__mob-menu-btn" type="button" onclick="toggleHamburger()">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
         <ul>
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.html#top" class="same-page" onclick="closeMobMenu()">Home</a>
             </li>
             <li>
-                <a href="index.html#speaker_list">Speaker</a>
+                <a href="index.html#speaker_list" class="same-page" onclick="closeMobMenu()">Speaker</a>
             </li>
             <li>
-                <a>Schedule</a>
+                <a onclick="closeMobMenu()">Schedule</a>
             </li>
             <li>
-                <a>Kotler Award</a>
+                <a onclick="closeMobMenu()">Kotler Award</a>
             </li>
             <li>
-                <a href="sponsor.html">Be Sponsor</a>
+                <a href="sponsor.html" onclick="closeMobMenu()" onclick="closeMobMenu()">Be Sponsor</a>
             </li>
             <li>
-                <a href="http://www.worldmarketingsummitgroup.org/">WMS</a>
+                <a href="http://www.worldmarketingsummitgroup.org/" onclick="closeMobMenu()">WMS</a>
             </li>
             <li>
-                <a>Contact Us</a>
+                <a onclick="closeMobMenu()">Contact Us</a>
             </li>
         </ul>
+
     </nav>
 
-    
+
+
     <header class="sponsor-header">
         <figure>
             <div class="sponsor-header__hero-image">
@@ -138,16 +146,26 @@
                     <h2 class="packages__features__heading">Features</h2>
 
                     <ul>
-                        <li><strong>Display on  Sponsorship banner.</strong></li>
-                        <li><strong>Visibility of the company logo </strong>in all the material used for distribution.</li>
-                        <li>Awarded with the <strong>Event Trophy</strong> -Sales promotion for the SMC Audience.</li>
-                        <li><strong>Social Media Coverage</strong>, Media Advertising –Print, TV & Radio. – Name, Logo & company brief in the TOP SPONSORS list in the website.</li>
+                        <li>
+                            <strong>Display on Sponsorship banner.</strong>
+                        </li>
+                        <li>
+                            <strong>Visibility of the company logo </strong>in all the material used for distribution.</li>
+                        <li>Awarded with the
+                            <strong>Event Trophy</strong> -Sales promotion for the SMC Audience.</li>
+                        <li>
+                            <strong>Social Media Coverage</strong>, Media Advertising –Print, TV & Radio. – Name, Logo & company
+                            brief in the TOP SPONSORS list in the website.</li>
                         <div class="more packages__features__hide">
-                            <li><strong>Part of Promotions</strong> – Pre-Event & Post Event and also during the event.</li>
-                            <li><strong>6 Free Tickets</strong> to the sponsor.</li>
-                            <li><strong>Dedicated booth Space</strong> of 1.2X3 M to display or promote the products/services.</li>
+                            <li>
+                                <strong>Part of Promotions</strong> – Pre-Event & Post Event and also during the event.</li>
+                            <li>
+                                <strong>6 Free Tickets</strong> to the sponsor.</li>
+                            <li>
+                                <strong>Dedicated booth Space</strong> of 1.2X3 M to display or promote the products/services.</li>
                             <li>Logo on the front side of the badges.</li>
-                            <li><strong>One-To-One introduction</strong> with the speakers.</li>
+                            <li>
+                                <strong>One-To-One introduction</strong> with the speakers.</li>
                         </div>
                     </ul>
                     <a href="javascript:void(0)" onclick="showAllFeatures('diamond')" class="link-regular">More &rarr;</a>
@@ -171,15 +189,25 @@
                     <h2 class="packages__features__heading">Features</h2>
 
                     <ul>
-                        <li><strong>Display on Sponsorship banner.</strong></li>
-                        <li><strong>Visibility of the company logo</strong> in all the material used for distribution.</li>
-                        <li>Awarded with the <strong>Event Trophy.</strong></li>
-                        <li><strong>Social Media Coverage,</strong> Media Advertising –Print, TV & Radio.</li>
+                        <li>
+                            <strong>Display on Sponsorship banner.</strong>
+                        </li>
+                        <li>
+                            <strong>Visibility of the company logo</strong> in all the material used for distribution.</li>
+                        <li>Awarded with the
+                            <strong>Event Trophy.</strong>
+                        </li>
+                        <li>
+                            <strong>Social Media Coverage,</strong> Media Advertising –Print, TV & Radio.</li>
                         <div class="more packages__features__hide">
-                            <li><strong>Name, Logo & company brief</strong> in the TOP SPONSORS list in the website.</li>
-                            <li><strong>Part of Promotions</strong> – Pre-Event & Post Event and also during the event.</li>
-                            <li><strong>4 Free Tickets</strong> to the sponsor.</li>
-                            <li><strong>Booth space</strong> of 1.2X2.4 M to display or promote the products/services.</li>
+                            <li>
+                                <strong>Name, Logo & company brief</strong> in the TOP SPONSORS list in the website.</li>
+                            <li>
+                                <strong>Part of Promotions</strong> – Pre-Event & Post Event and also during the event.</li>
+                            <li>
+                                <strong>4 Free Tickets</strong> to the sponsor.</li>
+                            <li>
+                                <strong>Booth space</strong> of 1.2X2.4 M to display or promote the products/services.</li>
                             <li>Logo on the back side of the badges.</li>
                         </div>
                     </ul>
@@ -193,7 +221,7 @@
 
         </div>
     </section>
-    
+
 
     <footer class="footer">
         <header class="header">

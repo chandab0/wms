@@ -57,3 +57,8 @@ $(function() {
         });
     
 });
+
+window.closeMobMenu = function() {
+    document.getElementsByClassName("hamburger")[0].classList.remove("is-active");
+    document.getElementsByClassName("c-navbar")[0].classList.remove("c-navbar__mobile-menu");
+}
