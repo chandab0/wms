@@ -46,3 +46,14 @@ window.toggleHamburger = function() {
         document.getElementsByClassName("c-navbar")[0].classList.add("c-navbar__mobile-menu");
     }
 }
+
+$(function() {
+    
+        $('.same-page').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+               scrollTop: $($(this).attr('href')).offset().top
+            }, 500, 'linear');
+        });
+    
+});
