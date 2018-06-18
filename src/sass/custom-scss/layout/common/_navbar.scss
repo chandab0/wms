@@ -8,7 +8,7 @@
     width: 100%;
     text-align: right;
     z-index: 100;
-    height: 8rem; //}
+    height: 8rem; 
     &__sticky {
         position: fixed;
         background-color: $white;
@@ -22,7 +22,7 @@
             display: inline-block;
             color: $primary;
             margin: 0;
-            padding: 1.5rem 0;
+            padding: 2.2rem 0;
         }
         a {
             &,
@@ -70,7 +70,7 @@
             height: 6rem;
             width: 100%;
             text-align: left;
-            padding: 2rem 4rem;
+            padding: 1.5rem 4rem;
             color: $primary;
             &:hover {
                 background: $secondary;
@@ -93,13 +93,23 @@
             }
         }
         ul {
-            background: rgba($white, 0.9);
+            background: $white;
         }
     }
     &__mob-menu-btn {
         display: inherit;
         @media only screen and (min-width: $tablet) {
             display: none!important;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &__mob-menu-btn-scroll {
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+            background: $secondary;
         }
     }
 }

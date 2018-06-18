@@ -1,5 +1,6 @@
 .quotes {
-
+    padding: 3rem 0;
+    background: $light;
     &__quote {
         @include title('Lato', sans-serif, $primary, 3rem, 0, 300, none, 2rem, 0, center);
     }

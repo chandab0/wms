@@ -24,6 +24,7 @@ body {
     padding: 0;
     line-height: 3rem;
     background: $light; 
+    color: $primary;
     //@include media-breakpoint-up(md) {
         padding: 0;
         animation: body-animation 2s ease;
@@ -50,4 +51,18 @@ ul li {
 input:-webkit-autofill {
     -webkit-animation-name: autofill;
     -webkit-animation-fill-mode: both;
+}
+
+a {
+    &,
+    &:link,
+    &:focus {
+        text-decoration: none
+    }
+
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
 }

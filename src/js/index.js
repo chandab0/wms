@@ -9,8 +9,10 @@ document.addEventListener('DOMContentLoaded', function(e) {
 function scrollFunction() {
     if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && !document.getElementById("navbar").classList.contains("c-navbar__sticky")) {
         document.getElementById("navbar").classList.add("c-navbar__sticky");
+        document.getElementsByClassName("c-navbar__mob-menu-btn")[0].classList.add("c-navbar__mob-menu-btn-scroll");
     } else if (!(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && document.getElementById("navbar").classList.contains("c-navbar__sticky")) {
         document.getElementById("navbar").classList.remove("c-navbar__sticky");
+        document.getElementsByClassName("c-navbar__mob-menu-btn")[0].classList.remove("c-navbar__mob-menu-btn-scroll");
     }
 }
 

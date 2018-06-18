@@ -7,6 +7,7 @@
         &__#{$content-class}--#{$i+1} {
             @include title('Lato', sans-serif, $light, 2rem, 0, 400, none, 1.5rem, 1rem, left);
             padding-left: 5rem;
+            line-height: 4rem;
             @media only screen and (min-width: $desktop) {
                 padding-left: 5rem + $i * 2rem;
             }
@@ -14,11 +15,16 @@
     }
     .c-row {
         margin: 0;
-        width: 100%!important;
+        width: 100% !important;
         max-width: 100%;
         padding: 1.5rem;
         @media only screen and (min-width: $tablet) {
             margin: 1uto;
+        }
+    }
+    &__list {
+        @media only screen and (min-width: $tablet) {
+            padding: 5rem 0;
         }
     }
 }
