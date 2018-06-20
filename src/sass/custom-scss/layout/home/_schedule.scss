@@ -1,4 +1,49 @@
 .schedule {
-    height: 60rem;
-    background: $light;
+    
+    margin: 0;
+    padding: 1.5rem;
+    background: $secondary;
+
+    &__container {
+        background: $light;
+        margin-bottom: 0;
+        padding: 4rem 2rem 8rem 2rem;
+        box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+        &__header {
+            @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 900, none, 3rem, 3rem, left);
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+        }
+
+        &__time{
+            @include title('Lato', sans-serif, $primary, 1.5rem, 0, 300, none, 0, 0, left);
+        }
+
+        &__session{
+            @include title('Lato', sans-serif, $primary, 1.5rem, 0, 300, none, 0, 0, left);
+            border-bottom: solid 1px $primary;
+            display: inline-block;
+            padding-bottom: 1.5rem;
+        }
+
+        &__speaker {
+            @include title('Lato', sans-serif, $primary, 1.5rem, 0, 900, none, 0, 0, left);
+            padding-top: 1.5rem;
+        }
+
+        &__credentials {
+            @include title('Lato', sans-serif, rgba($primary, 0.6), 1.5rem, 0, 400, none, 0, 0, left);
+        }
+    }
+}
+
+.time {
+    background: url(../img/time.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: -0.5rem;
+    margin-right: 1rem;
 }
