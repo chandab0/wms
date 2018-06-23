@@ -30,7 +30,7 @@
     position: absolute;
     height: 60vh;
     @media only screen and (min-width: $tablet) {
-        height: 90vh;
+        height: 70vh;
     }
 }
 
@@ -72,7 +72,7 @@
     
     &--white {
         background-color: $white;
-        color: $secondary;
+        color: $primary;
 
         &::after {
             background-color: $white;

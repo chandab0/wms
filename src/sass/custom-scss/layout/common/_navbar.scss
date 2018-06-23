@@ -1,6 +1,6 @@
 .c-navbar {
     transition: all 0.5s; //@media only screen and (min-width: $tablet) {
-    border-top: solid 4px $secondary;
+    border-top: solid 6px $secondary;
     background-color: transparent;
     position: absolute;
     top: 0;
@@ -8,19 +8,23 @@
     width: 100%;
     text-align: right;
     z-index: 100;
-    height: 8rem; 
+    height: 8rem;
     &__sticky {
         position: fixed;
         background-color: $white;
-        color: $secondary;
-        border-bottom: solid 1px $secondary;
+        a {
+            color: $primary !important;
+            &:before {
+                background-color: $secondary !important;
+            }
+        } //border-bottom: solid 1px $secondary;
     }
     ul li {
         display: none;
         @media only screen and (min-width: $tablet) {
             list-style: none;
             display: inline-block;
-            color: $primary;
+            color: $white;
             margin: 0;
             padding: 2.2rem 0;
         }
@@ -38,7 +42,7 @@
                 position: relative;
                 cursor: pointer;
                 text-decoration: none;
-                color: $primary;
+                color: $white;
             }
             &:before {
                 content: "";
@@ -47,7 +51,7 @@
                 height: 3px;
                 bottom: 0;
                 left: 0;
-                background-color: $secondary;
+                background-color: $white;
                 visibility: hidden;
                 transform: scaleX(0);
                 transition: all 0.3s ease-in-out 0s;
@@ -85,7 +89,7 @@
                 :visited,
                 :active,
                 :focus {
-                    color: $primary;
+                    color: $white;
                 }
                 &:before {
                     display: none;
@@ -99,16 +103,16 @@
     &__mob-menu-btn {
         display: inherit;
         @media only screen and (min-width: $tablet) {
-            display: none!important;
+            display: none !important;
         }
-
         &:focus {
             outline: 0;
         }
     }
-
     &__mob-menu-btn-scroll {
-        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after {
             background: $secondary;
         }
     }

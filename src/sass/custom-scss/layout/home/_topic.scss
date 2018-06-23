@@ -1,8 +1,9 @@
 .topics {
-    background-color: $secondary;
+    background-color: $primary;
     color: $light;
     padding: 8rem 0 5rem 0;
     $content-class: content;
+
     @for $i from 0 through 2 {
         &__#{$content-class}--#{$i+1} {
             @include title('Lato', sans-serif, $light, 2rem, 0, 400, none, 1.5rem, 1rem, left);
@@ -19,8 +20,13 @@
         max-width: 100%;
         padding: 1.5rem;
         @media only screen and (min-width: $tablet) {
-            margin: 1uto;
+            margin: auto;
         }
+        @media only screen and (min-width: $desktop) {
+            padding: 5rem;
+            margin: auto;
+        }
+    
     }
     &__list {
         @media only screen and (min-width: $tablet) {

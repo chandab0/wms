@@ -6,28 +6,7 @@
         margin: 0;
     }
     @media only screen and (min-width: $tablet) {
-        height: 90vh;
-    }
-    &__hero-image {
-        @include hero-image(top);
-        background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-mobile.jpg);
-        @media only screen and (min-width: $tablet) {
-            background-image: url(../img/hero-image-desktop.jpg);
-        }
-    }
-    &__hero-image-1 {
-        @include hero-image(top);
-        background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-1-mobile.jpg);
-        @media only screen and (min-width: $tablet) {
-            background-image: url(../img/hero-image-1-desktop.jpg);
-        }
-    }
-    &__hero-image-2 {
-        @include hero-image(top);
-        background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-2-mobile.jpg);
-        @media only screen and (min-width: $tablet) {
-            background-image: url(../img/hero-image-2-desktop.jpg);
-        }
+        height: 70vh;
     }
     &__left-section {
         background-color: rgba($primary, 0.4);
@@ -35,10 +14,9 @@
             position: absolute;
             left: 0;
             top: 0;
-            height: 65vh;
-            width: 60%;
-            background-color: rgba($primary, 0.4);
-            clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%, 0 0);
+            height: 70vh;
+            width: 25%;
+            background-color: $primary; //clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%, 0 0);
         }
         &__logo {
             position: absolute;
@@ -49,9 +27,9 @@
             }
             @media only screen and (min-width: $tablet) {
                 left: 50%;
-                transform: translateX(-60%);
+                transform: translateX(-50%);
                 top: 15rem;
-                height: 20rem;
+                height: 12rem;
             }
         }
     }
@@ -61,48 +39,90 @@
         top: 30%;
         transform: translateX(-50%);
         line-height: 4rem;
-        h1::first-line {
-            font-weight: 900;
+        &__hero-image {
+            @include hero-image(bottom);
+            background-image: linear-gradient(120deg, rgba($primary, 0.2) 0%, rgba($primary, 0.2) 100%), url(../img/hero-image-mobile.jpg);
             @media only screen and (min-width: $tablet) {
-                font-weight: 300;
+                background-image: linear-gradient(120deg, rgba($primary, 0) 0%, rgba($primary, 0.6) 100%), url(../img/hero-image-desktop.jpg);
             }
         }
+        &__hero-image-1 {
+            @include hero-image(center);
+            background-image: linear-gradient(120deg, rgba($primary, 0.2) 0%, rgba($secondary, 0.2) 100%), url(../img/hero-image-1-mobile.jpg);
+            @media only screen and (min-width: $tablet) {
+                background-image: linear-gradient(120deg, rgba($primary, 0) 0%, rgba($primary, 0.6) 100%), url(../img/hero-image-1-desktop.jpg);
+            }
+        }
+        &__hero-image-2 {
+            @include hero-image(center);
+            background-image: linear-gradient(120deg, rgba($primary, 0.2) 0%, rgba($secondary, 0.2) 100%), url(../img/hero-image-2-mobile.jpg);
+            @media only screen and (min-width: $tablet) {
+                background-image: linear-gradient(120deg, rgba($primary, 0) 0%, rgba($primary, 0.6) 100%), url(../img/hero-image-2-desktop.jpg);
+            }
+        }
+        &__jagged-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 70vh;
+            width: 100%;
+            z-index: 50;
+            background-color: transparent;
+            background-image: linear-gradient( 135deg, rgba($primary, 1) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient( 45deg, rgba($primary, 1) 50%, rgba(255, 255, 255, 0) 50%);
+            ;
+            background-repeat: repeat-y;
+            background-position: top left, top left, bottom left, bottom left;
+            ;
+            background-size: 2rem 2rem, 2rem 2rem, 2rem 2rem, 2rem 2rem;
+        }
+        h1::first-line {
+            font-weight: 900;
+            /*@media only screen and (min-width: $tablet) {
+                font-weight: 300;
+            }*/
+        }
         @media only screen and (min-width: $tablet) {
-            left: 60%;
-            top: 15rem;
+            left: 25%;
+            top: 0;
             line-height: 5rem;
             margin-right: 6rem;
             transform: translateX(0);
+            width: 75%;
+        }
+        &__text {
+            margin: 15rem 5rem;
+            width: 40rem;
+            position: absolute;
+            right: 5%;
+            top: 5%;
         }
     }
-    &__venue {
-        background: rgba($primary, 0.95);
-        position: relative;
-        padding: 2rem 0;
-        border-top: solid 2px $white;
-        .c-row .col-1-of-2 {
-            margin-bottom: 2rem !important;
-        }
-        @media only screen and (min-width: $tablet) {
-            position: absolute;
-            height: 25vh;
-            top: 65vh;
-            width: 100%;
-        }
+}
 
-        
-        &__header {
-            @include title('Lato', sans-serif, $white, 1.5rem, 0.2rem, 700, none, 2rem, 0, left);
-            text-transform: uppercase;    
-        }
-
-        p {
-            @include title('Lato', sans-serif, rgba($white, 0.8), 1.5rem, 0, 300, none, 1rem, 0, left);
-            text-transform: uppercase;
-            line-height: 1.2rem;
-            word-spacing: 0.5rem;
-            padding: 0;
-            letter-spacing: 0.2rem;
-        }
+.venue {
+    //border-top: solid 4px $secondary;
+    background-color: rgba($white, 0.95); //rgba($primary, 0.95);
+    position: relative;
+    padding: 2rem 0; //border-top: solid 2px $secondary;
+    .c-row .col-1-of-2 {
+        margin-bottom: 2rem !important;
+    }
+    @media only screen and (min-width: $tablet) {
+        //position: absolute;
+        //height: 25vh;
+        //top: 65vh;
+        width: 100%;
+    }
+    &__header {
+        @include title('Lato', sans-serif, $primary, 1.5rem, 0.2rem, 700, none, 2rem, 0, left);
+        text-transform: uppercase;
+    }
+    p {
+        @include title('Lato', sans-serif, $primary, 1.5rem, 0, 300, none, 1rem, 0, left);
+        text-transform: uppercase;
+        line-height: 1.2rem;
+        word-spacing: 0.5rem;
+        padding: 0;
+        letter-spacing: 0.2rem;
     }
 }

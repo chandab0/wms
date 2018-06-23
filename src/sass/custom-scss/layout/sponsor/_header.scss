@@ -17,9 +17,9 @@
     }
     &__hero-image {
         @include hero-image(center);
-        background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-mobile.jpg);
+        background-image: linear-gradient(120deg, rgba($primary, 0.7) 0%, rgba($primary, 0.5) 100%), url(../img/hero-image-mobile.jpg);
         @media only screen and (min-width: $tablet) {
-            background-image: url(../img/hero-image-desktop.jpg);
+            background-image: linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($primary, 0.5) 100%), url(../img/hero-image-desktop.jpg);
         }
     }
     &__title {
@@ -31,7 +31,7 @@
         h1::first-line {
             font-weight: 900;
             @media only screen and (min-width: $tablet) {
-                font-weight: 300;
+                font-weight: 900;
             }
         }
         @media only screen and (min-width: $tablet) {
