@@ -1,9 +1,8 @@
 .topics {
-    background-color: $primary;
+    background-image: linear-gradient( 135deg, rgba($india-green, 1) 50%, rgba($primary, 1) 50%);
     color: $light;
     padding: 8rem 0 5rem 0;
     $content-class: content;
-
     @for $i from 0 through 2 {
         &__#{$content-class}--#{$i+1} {
             @include title('Lato', sans-serif, $light, 2rem, 0, 400, none, 1.5rem, 1rem, left);
@@ -26,7 +25,6 @@
             padding: 5rem;
             margin: auto;
         }
-    
     }
     &__list {
         @media only screen and (min-width: $tablet) {

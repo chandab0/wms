@@ -23,12 +23,11 @@
         z-index: 2;
         border-radius: 1rem;
         padding: 4rem;
-        background-color: $primary;
+        background-color: $india-green;
         color: $white;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
         text-align: right;
         
-
         @media only screen and (min-width: $tablet) {
             margin-left: 5rem;
             width: 50%!important;

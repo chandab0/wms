@@ -15,7 +15,11 @@
         text-transform: uppercase;
         word-spacing: 0.5rem;
     }
-    &--secondary--white {
+    &--secondary--center {
+        @include title('Lato', sans-serif, $white, 2rem, 0, 700, none, 1rem, 0, center);
+        text-transform: uppercase;
+        word-spacing: 0.5rem;
+    }    &--secondary--white {
         @include title('Lato', sans-serif, $white, 2rem, 0, 300, none, 1rem, 0, center);
         @media only screen and (min-width: $tablet) {
             @include title('Lato', sans-serif, $white, 2rem, 0, 700, none, 1rem, 0, right);
