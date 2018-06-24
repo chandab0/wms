@@ -35,8 +35,8 @@
             }
         }
         @media only screen and (min-width: $tablet) {
+            margin: 2rem 5rem;
             right: 5%!important;
-            top: 15rem;
             line-height: 5rem; //margin-right: 6rem;
             transform: translateX(0);
         }
