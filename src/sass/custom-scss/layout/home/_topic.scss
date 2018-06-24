@@ -7,7 +7,7 @@
     @for $i from 0 through 2 {
         &__#{$content-class}--#{$i+1} {
             @include title('Lato', sans-serif, $light, 2rem, 0, 400, none, 1.5rem, 1rem, left);
-            padding-left: 5rem;
+            padding-left: 2rem;
             line-height: 4rem;
             @media only screen and (min-width: $desktop) {
                 padding-left: 5rem + $i * 2rem;

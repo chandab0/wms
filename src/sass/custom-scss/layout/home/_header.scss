@@ -1,7 +1,7 @@
 .main-header {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 60vh;
     figure {
         margin: 0;
     }
@@ -35,45 +35,46 @@
     }
     &__right-section {
         position: absolute;
-        left: 50%;
-        top: 30%;
-        transform: translateX(-50%);
+        left: 0;
+        top: 0; //transform: translateX(-50%);
+        width: 100%;
+        height: 100%;
         line-height: 4rem;
         &__hero-image {
             @include hero-image(bottom);
-            background-image: linear-gradient(120deg, rgba($primary, 0.2) 0%, rgba($primary, 0.2) 100%), url(../img/hero-image-mobile.jpg);
+            background-image: linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-mobile.jpg);
             @media only screen and (min-width: $tablet) {
                 background-image: linear-gradient(120deg, rgba($primary, 0) 0%, rgba($primary, 0.6) 100%), url(../img/hero-image-desktop.jpg);
             }
         }
         &__hero-image-1 {
             @include hero-image(center);
-            background-image: linear-gradient(120deg, rgba($primary, 0.2) 0%, rgba($secondary, 0.2) 100%), url(../img/hero-image-1-mobile.jpg);
+            background-image: linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-1-mobile.jpg);
             @media only screen and (min-width: $tablet) {
                 background-image: linear-gradient(120deg, rgba($primary, 0) 0%, rgba($primary, 0.6) 100%), url(../img/hero-image-1-desktop.jpg);
             }
         }
         &__hero-image-2 {
             @include hero-image(center);
-            background-image: linear-gradient(120deg, rgba($primary, 0.2) 0%, rgba($secondary, 0.2) 100%), url(../img/hero-image-2-mobile.jpg);
+            background-image: linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-2-mobile.jpg);
             @media only screen and (min-width: $tablet) {
                 background-image: linear-gradient(120deg, rgba($primary, 0) 0%, rgba($primary, 0.6) 100%), url(../img/hero-image-2-desktop.jpg);
             }
         }
         &__jagged-effect {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 70vh;
-            width: 100%;
-            z-index: 50;
-            background-color: transparent;
-            background-image: linear-gradient( 135deg, rgba($primary, 1) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient( 45deg, rgba($primary, 1) 50%, rgba(255, 255, 255, 0) 50%);
-            ;
-            background-repeat: repeat-y;
-            background-position: top left, top left, bottom left, bottom left;
-            ;
-            background-size: 2rem 2rem, 2rem 2rem, 2rem 2rem, 2rem 2rem;
+            @media only screen and (min-width: $tablet) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 70vh;
+                width: 100%;
+                z-index: 50;
+                background-color: transparent;
+                background-image: linear-gradient( 135deg, rgba($primary, 1) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient( 45deg, rgba($primary, 1) 50%, rgba(255, 255, 255, 0) 50%);
+                background-repeat: repeat-y;
+                background-position: top left, top left, bottom left, bottom left;
+                background-size: 2rem 2rem, 2rem 2rem, 2rem 2rem, 2rem 2rem;
+            }
         }
         h1::first-line {
             font-weight: 900;
@@ -90,11 +91,18 @@
             width: 75%;
         }
         &__text {
-            margin: 15rem 5rem;
-            width: 40rem;
             position: absolute;
-            right: 5%;
-            top: 5%;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            @media only screen and (min-width: $tablet) {
+                margin: 15rem 5rem;
+                width: 40rem;
+                top: 5%;
+                right: 5%;
+                left: auto;
+                transform: inherit;
+            }
         }
     }
 }
@@ -108,26 +116,34 @@
         margin: 0;
         max-width: 100%;
         .col-1-of-2 {
-            padding: 3rem 6rem;
+            margin-bottom: 0;
+            padding: 3rem 2rem;
+            @media only screen and (min-width: $tablet) {
+                padding: 3rem 6rem;
+            }
         }
         .col-1-of-2:last-child {
-            position: relative;
-            background-color: $lighter;
-            .jagged-effect {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                background-color: transparent;
-                background-image: linear-gradient( 135deg, rgba($white, 1) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient( 45deg, rgba($white, 1) 50%, rgba(255, 255, 255, 0) 50%);
-                background-repeat: repeat-y;
-                background-position: top left, top left, bottom left, bottom left;
-                background-size: 2rem 2rem, 2rem 2rem, 2rem 2rem, 2rem 2rem;
-            }
-            h2,
-            p {
-                color: $white;
+            padding-top: 0;
+            @media only screen and (min-width: $tablet) {
+                padding: 3rem 6rem;
+                position: relative;
+                background-color: $lighter;
+                .jagged-effect {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: transparent;
+                    background-image: linear-gradient( 135deg, rgba($white, 1) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient( 45deg, rgba($white, 1) 50%, rgba(255, 255, 255, 0) 50%);
+                    background-repeat: repeat-y;
+                    background-position: top left, top left, bottom left, bottom left;
+                    background-size: 2rem 2rem, 2rem 2rem, 2rem 2rem, 2rem 2rem;
+                }
+                h2,
+                p {
+                    color: $white;
+                }
             }
         }
     }
