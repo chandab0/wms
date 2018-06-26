@@ -23,19 +23,29 @@ AOS.init({
 
 window.showAllFeatures = function(sponsorshipPackage) {
     var e = document.getElementsByClassName('more');
-    if(sponsorshipPackage === 'strategic') {
+    if(sponsorshipPackage === 'title') {
         e[0].classList.remove('packages__features__hide');
         document.getElementsByClassName('link-regular')[0].classList.add('packages__features__hide');
     }
-    else if(sponsorshipPackage === 'diamond'){
+    else if(sponsorshipPackage === 'principal'){
         e[1].classList.remove('packages__features__hide');
         document.getElementsByClassName('link-regular')[1].classList.add('packages__features__hide');
-    
+    }
+    else if(sponsorshipPackage === 'platinum'){
+        e[2].classList.remove('packages__features__hide');
+        document.getElementsByClassName('link-regular')[2].classList.add('packages__features__hide');    
     }
     else if(sponsorshipPackage === 'gold'){
-        e[2].classList.remove('packages__features__hide');
-        document.getElementsByClassName('link-regular')[2].classList.add('packages__features__hide');
-    
+        e[3].classList.remove('packages__features__hide');
+        document.getElementsByClassName('link-regular')[3].classList.add('packages__features__hide');
+    }
+    else if(sponsorshipPackage === 'silver'){
+        e[4].classList.remove('packages__features__hide');
+        document.getElementsByClassName('link-regular')[4].classList.add('packages__features__hide');
+    }
+    else if(sponsorshipPackage === 'bronze'){
+        e[5].classList.remove('packages__features__hide');
+        document.getElementsByClassName('link-regular')[5].classList.add('packages__features__hide');
     }
 }
 
