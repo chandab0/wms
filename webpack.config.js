@@ -58,6 +58,10 @@ module.exports = {
             template: "./src/speakers.html",
             filename: "./speakers.html"
         }),
+        new HtmlWebPackPlugin({
+            template: "./src/error.html",
+            filename: "./error.html"
+        }),
         new MiniCssExtractPlugin({
             filename: "[name].[chunkhash:8].css",
             chunkFilename: "[id].css"
