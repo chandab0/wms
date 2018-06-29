@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 var webpack = require('webpack'),
     path = require('path');
@@ -65,6 +66,17 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].[chunkhash:8].css",
             chunkFilename: "[id].css"
-        })
+        }),
+		new CopyWebpackPlugin([
+        {
+            from: 'src/sitemap.xml',
+            to: 'sitemap.xml',
+            toType: 'file'
+        },
+		{
+            from: 'src/robots.txt',
+            to: 'robots.txt',
+            toType: 'file'
+        }], {})
     ]
 };
