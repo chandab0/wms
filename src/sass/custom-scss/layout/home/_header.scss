@@ -59,14 +59,14 @@
             @include hero-image(center);
             background-image: linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-1-mobile.jpg);
             @media only screen and (min-width: $tablet) {
-                background-image: linear-gradient(120deg, rgba($primary, 0) 0%, rgba($primary, 0.6) 100%), url(../img/hero-image-1-desktop.jpg);
+                background-image: linear-gradient(120deg, rgba($black, 0.4) 0%, rgba($black, 0.4) 100%), url(../img/hero-image-1-desktop.jpg);
             }
         }
         &__hero-image-2 {
             @include hero-image(center);
             background-image: linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-2-mobile.jpg);
             @media only screen and (min-width: $tablet) {
-                background-image: linear-gradient(120deg, rgba($primary, 0) 0%, rgba($primary, 0.6) 100%), url(../img/hero-image-2-desktop.jpg);
+                background-image: linear-gradient(120deg, rgba($black, 0.4) 0%, rgba($black, 0.4) 100%), url(../img/hero-image-2-desktop.jpg);
             }
         }
         &__jagged-effect {
@@ -101,14 +101,13 @@
         &__text {
             position: absolute;
             top: 15%;
-            left: 5%;
-            //transform: translateX(-50%);
+            left: 50%;
+            transform: translateX(-50%);
             @media only screen and (min-width: $tablet) {
                 margin: 15rem 5rem;
                 width: 40rem;
                 top: 5%;
-                left: 5%;
-                //left: auto;
+                left: 7%;
                 transform: inherit;
             }
         }
