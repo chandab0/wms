@@ -17,9 +17,9 @@
     }
     &__hero-image {
         @include hero-image(center);
-        background-image: linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-mobile.jpg);
+        background-image: /*linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%),*/ url(../img/IMAGE_KA_1_mobile.jpg);
         @media only screen and (min-width: $tablet) {
-            background-image: linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-desktop.jpg);
+            background-image: /*linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%),*/ url(../img/IMAGE_KA_1.png);
         }
     }
     &__title {
@@ -36,15 +36,15 @@
         }
         @media only screen and (min-width: $tablet) {
             margin: 2rem 5rem;
-            right: 5%!important;
+            left: 5%!important;
             line-height: 5rem; //margin-right: 6rem;
             transform: translateX(0);
         }
         @media only screen and (min-width: $laptop) {
-            left: 60%;
+            left: 5%;
         }
         @media only screen and (min-width: $desktop) {
-            left: 65%;
+            left: 5%;
         }
     }
 }
