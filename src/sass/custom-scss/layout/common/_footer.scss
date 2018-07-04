@@ -2,20 +2,40 @@
     position: relative;
     color: $light;
     font-weight: $font-weight-light;
-    font-size: 1.6rem;
-    background: $primary;
+    font-size: 1.5rem;
+    background: lighten($black, 10%);
     color: $white;
     header {
         padding: 6rem;
+        h2 {
+            @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 700, none, 2rem, 0, left);
+        }
+        h3 {
+            @include title('Lato', sans-serif, rgba($light, 0.7), 1.5rem, 0, 700, none, 1rem, 0, left);
+            padding-bottom: 0.5rem;
+        }
+        h4 {
+            @include title('Lato', sans-serif, rgba($light, 0.7), 1.5rem, 0, 700, none, 1rem, 0, left);
+            padding-top: 0rem;
+            padding-bottom: 1rem;
+        }
+        p {
+            margin: 0;
+            line-height: 3rem;
+            color: rgba($white, 0.6);
+        }
+        a {
+            &,
+            :link,
+            :visited,
+            :active,
+            :focus {
+                color: $secondary;
+            }
+        }
     }
     footer {
         padding: 2rem 6rem;
         background: $black;
-    }
-    .header {
-        font-weight: 900;
-        text-transform: uppercase;
-        padding-bottom: 3rem;
-        height: 30rem;
     }
 }

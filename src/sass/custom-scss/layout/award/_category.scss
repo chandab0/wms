@@ -1,12 +1,11 @@
-.award-qualities {
-    background-color: $india-green;
+.award-cat {
+    background-color: $light;
     padding: 5rem 1rem;
-
     @media only screen and (min-width: $tablet) {
         padding: 5rem;
     }
     ul li {
-        @include title('Lato', sans-serif, $white, 2rem, 0, 300, none, 1rem, 5rem, left);
+        @include title('Lato', sans-serif, $primary, 2rem, 0, 300, none, 1rem, 5rem, left);
         padding: 2rem;
         background-image: url('../img/check.png');
         background-repeat: no-repeat;
@@ -30,5 +29,4 @@
         list-style: none;
         padding: 5rem;
     }
-    
 }
