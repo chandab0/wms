@@ -1,17 +1,27 @@
 .award-quotes {
-    padding: 5rem;
+    padding: 5rem 3rem 9rem 3rem;
     background: $light;
-    line-height: 5rem;
+    line-height: 3rem;
     max-width: 95%;
     margin: auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
 
     @media only screen and (min-width: $tablet) {
         max-width: 70%;
     }
+
+    &__icon {
+        margin: 2rem auto;
+        height: 10rem;
+    }
+
     &__quote {
-        @include title('Lato', sans-serif, $primary, 3rem, 0, 300, none, 2rem, 0, center);
+        @include title('Lato', sans-serif, $primary, 2rem, 0, 300, none, 2rem, 0, center);
     }
     &__author {
+        margin-top: 3rem;
         @include title('Lato', sans-serif, $primary, 2rem, 0, 700, none, 0rem, 0, center);
     }
 }

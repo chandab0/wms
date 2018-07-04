@@ -1,10 +1,7 @@
 .award-qualities {
     background-color: $india-green;
-    padding: 5rem 1rem;
+    padding: 7rem 1rem;
 
-    @media only screen and (min-width: $tablet) {
-        padding: 5rem;
-    }
     ul li {
         @include title('Lato', sans-serif, $white, 2rem, 0, 300, none, 1rem, 5rem, left);
         padding: 2rem;
@@ -16,7 +13,7 @@
     h2 {
         @include title('Lato',
         sans-serif,
-        $primary,
+        $white,
         2rem,
         0,
         700,

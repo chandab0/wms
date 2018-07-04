@@ -1,7 +1,15 @@
 .award-def {
     background-color: $secondary;
-    padding: 5rem;
+    padding: 5rem 3rem 9rem 3rem;
     line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__icon {
+        margin: 2rem auto;
+        height: 10rem;
+    }
 
     &__definition {
         @include title('Lato', sans-serif, $light, 2rem, 0, 300, none, 2rem, 0, center);

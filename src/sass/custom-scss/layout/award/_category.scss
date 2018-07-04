@@ -1,9 +1,8 @@
 .award-cat {
     background-color: $light;
-    padding: 5rem 1rem;
-    @media only screen and (min-width: $tablet) {
-        padding: 5rem;
-    }
+    padding: 7rem 1rem;
+
+
     ul li {
         @include title('Lato', sans-serif, $primary, 2rem, 0, 300, none, 1rem, 5rem, left);
         padding: 2rem;

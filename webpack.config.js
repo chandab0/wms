@@ -67,6 +67,14 @@ module.exports = {
             template: "./src/award.html",
             filename: "./award.html"
         }),
+        new HtmlWebPackPlugin({
+            template: "./src/wms.html",
+            filename: "./wms.html"
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/medal.html",
+            filename: "./medal.html"
+        }),
         new MiniCssExtractPlugin({
             filename: "[name].[chunkhash:8].css",
             chunkFilename: "[id].css"
