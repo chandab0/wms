@@ -1,0 +1,31 @@
+.wms {
+    padding: 8rem 3rem;
+    background-color: $light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+
+    @media only screen and (min-width: $tablet) {
+        max-width: 70rem;
+    }
+
+    h2 {
+        @include title('Lato', sans-serif, $secondary, 2rem, 0, 900, none, 4rem, 0, left);
+    }
+
+    p {
+        padding-bottom: 3rem;
+    }
+
+    a {
+        &,
+        :link,
+        :visited,
+        :active,
+        :focus {
+            color: $secondary;
+        }
+    }
+}
