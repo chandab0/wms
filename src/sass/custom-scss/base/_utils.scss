@@ -79,6 +79,15 @@
         }
     }
     
+    &--secondary {
+        background-color: $secondary;
+        color: $white;
+
+        &::after {
+            background-color: $secondary;
+        }
+    }
+
     &::after {
         content: "";
         display: inline-block;

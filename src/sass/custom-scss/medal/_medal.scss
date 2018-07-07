@@ -1,0 +1,87 @@
+.medal {
+    &__genesis {
+        padding: 8rem 6rem 2rem 6rem;
+        background-color: $light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        @media only screen and (min-width: $tablet) {
+            max-width: 70rem;
+        }
+        h2 {
+            @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 900, none, 4rem, 0, left);
+            text-transform: uppercase;
+        }
+        p {
+            padding-bottom: 3rem;
+        }
+        a {
+            &,
+            :link,
+            :visited,
+            :active,
+            :focus {
+                color: $secondary;
+            }
+        }
+    }
+    &__background {
+        padding: 2rem 6rem;
+        background-color: $light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        @media only screen and (min-width: $tablet) {
+            max-width: 70rem;
+        }
+        h2 {
+            @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 900, none, 4rem, 0, left);
+            text-transform: uppercase;
+        }
+        p {
+            padding-bottom: 3rem;
+        }
+    }
+    &__selection {
+        padding: 2rem 6rem;
+        background-color: $light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        @media only screen and (min-width: $tablet) {
+            max-width: 70rem;
+        }
+        h2 {
+            @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 900, none, 4rem, 0, left);
+            text-transform: uppercase;
+        }
+        p {
+            padding-bottom: 3rem;
+        }
+    }
+    &__criteria {
+        padding: 2rem 6rem;
+        background-color: $light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        @media only screen and (min-width: $tablet) {
+            max-width: 70rem;
+        }
+        h2 {
+            @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 900, none, 4rem, 0, left);
+            text-transform: uppercase;
+        }
+        p {
+            padding-bottom: 3rem;
+        }
+    }
+}
