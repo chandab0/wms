@@ -18,10 +18,10 @@
     }
 
     &__quote {
-        @include title('Lato', sans-serif, $primary, 2rem, 0, 300, none, 2rem, 0, center);
+        @include title('Lato', sans-serif, $primary, 1.5rem, 0, 400, none, 2rem, 0, center);
     }
     &__author {
         margin-top: 3rem;
-        @include title('Lato', sans-serif, $primary, 2rem, 0, 700, none, 0rem, 0, center);
+        @include title('Lato', sans-serif, $primary, 1.5rem, 0, 700, none, 0rem, 0, center);
     }
 }

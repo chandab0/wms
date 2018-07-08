@@ -12,7 +12,7 @@
     }
 
     &__definition {
-        @include title('Lato', sans-serif, $light, 2rem, 0, 300, none, 2rem, 0, center);
+        @include title('Lato', sans-serif, $light, 1.5rem, 0, 400, none, 2rem, 0, center);
         margin: auto;
         max-width: 95%;
     

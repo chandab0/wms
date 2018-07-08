@@ -14,6 +14,7 @@
     h2 {
         @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 900, none, 4rem, 0, left);
         text-transform: uppercase;
+        letter-spacing: 0.2rem;
     }
 
     p {

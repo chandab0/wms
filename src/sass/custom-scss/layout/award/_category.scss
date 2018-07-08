@@ -4,7 +4,7 @@
 
 
     ul li {
-        @include title('Lato', sans-serif, $primary, 2rem, 0, 300, none, 1rem, 5rem, left);
+        @include title('Lato', sans-serif, $primary, 1.5rem, 0, 400, none, 1rem, 5rem, left);
         padding: 2rem;
         background-image: url('../img/check.png');
         background-repeat: no-repeat;
@@ -14,14 +14,16 @@
     h2 {
         @include title('Lato',
         sans-serif,
-        $primary,
-        2rem,
+        $secondary,
+        1.5rem,
         0,
         700,
         none,
         1rem,
         5rem,
         left);
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
     }
     ul {
         vertical-align: middle;
