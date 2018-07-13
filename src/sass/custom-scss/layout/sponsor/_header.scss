@@ -25,7 +25,8 @@
     &__title {
         position: absolute;
         left: 50%;
-        top: 30%;
+        top: 25%;
+        width: 80%;
         transform: translateX(-50%);
         line-height: 4rem;
         display: flex;
@@ -39,16 +40,18 @@
             }
         }
         @media only screen and (min-width: $tablet) {
-
+            width: auto;
             margin: 2rem 5rem;
             left: 5%!important;
             line-height: 5rem; //margin-right: 6rem;
             transform: translateX(0);
         }
         @media only screen and (min-width: $laptop) {
+            width: auto;
             left: 5%;
         }
         @media only screen and (min-width: $desktop) {
+            width: auto;
             left: 5%;
         }
     }
