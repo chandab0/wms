@@ -131,17 +131,23 @@
 
 .venue {
     //border-top: solid 4px $secondary;
-    background-color: rgba($white, 0.95); //rgba($primary, 0.95);
+    min-height: 30vh;
+    background-color: $light; //rgba($primary, 0.95);
     position: relative;
     padding: 0; //border-top: solid 2px $secondary;
     .c-row {
         margin: 0;
         max-width: 100%;
+        height: 100%;
         .col-1-of-2 {
             margin-bottom: 0;
             padding: 3rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             @media only screen and (min-width: $tablet) {
                 padding: 3rem 6rem;
+                min-height: 30vh;
             }
         }
         .col-1-of-2:last-child {
@@ -157,7 +163,7 @@
                     height: 100%;
                     width: 100%;
                     background-color: transparent;
-                    background-image: linear-gradient( 135deg, rgba($white, 1) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient( 45deg, rgba($white, 1) 50%, rgba(255, 255, 255, 0) 50%);
+                    background-image: linear-gradient( 135deg, rgba($light, 1) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient( 45deg, rgba($light, 1) 50%, rgba(255, 255, 255, 0) 50%);
                     background-repeat: repeat-y;
                     background-position: top left, top left, bottom left, bottom left;
                     background-size: 2rem 2rem, 2rem 2rem, 2rem 2rem, 2rem 2rem;
@@ -171,7 +177,6 @@
     }
     @media only screen and (min-width: $tablet) {
         //position: absolute;
-        //height: 25vh;
         //top: 65vh;
         width: 100%;
     }

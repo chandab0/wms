@@ -1,0 +1,27 @@
+.existing-sponsors {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(1, 20rem);
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    &__sponsor {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 25% 75%;
+    
+        &__header {
+            @include title('Lato', sans-serif, rgba($secondary, 0.6), 1.5rem, 0, 400, none, 0.5rem, 0, left);
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+            align-self: start;
+            justify-self: center;
+        }
+        &__logo {
+            max-height: 8rem;
+            max-width: 12rem;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+}
