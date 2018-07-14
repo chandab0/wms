@@ -89,6 +89,11 @@ module.exports = {
             from: 'src/robots.txt',
             to: 'robots.txt',
             toType: 'file'
+        },
+        {
+            from: 'src/Kotler Excellence Medal.pdf',
+            to: 'Kotler Excellence Medal.pdf',
+            toType: 'file'
         }], {})
     ]
 };

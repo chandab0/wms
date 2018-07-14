@@ -1,7 +1,7 @@
 import style from "../sass/styles.scss";
 import AOS from 'aos';
 
-document.addEventListener('DOMContentLoaded', function(e) {
+document.addEventListener('DOMContentLoaded', function (e) {
     window.onscroll = function () { scrollFunction() };
     document.getElementsByClassName("footer__copyright").item(0).querySelector('p').innerHTML = 'Copyright &copy; ' + new Date().getFullYear() + ' World Marketing Summit';
 });
@@ -21,36 +21,36 @@ AOS.init({
     disable: 'mobile'
 });
 
-window.showAllFeatures = function(sponsorshipPackage) {
+window.showAllFeatures = function (sponsorshipPackage) {
     var e = document.getElementsByClassName('more');
-    if(sponsorshipPackage === 'title') {
+    if (sponsorshipPackage === 'title') {
         e[0].classList.remove('packages__features__hide');
         document.getElementsByClassName('link-regular')[0].classList.add('packages__features__hide');
     }
-    else if(sponsorshipPackage === 'principal'){
+    else if (sponsorshipPackage === 'principal') {
         e[1].classList.remove('packages__features__hide');
         document.getElementsByClassName('link-regular')[1].classList.add('packages__features__hide');
     }
-    else if(sponsorshipPackage === 'platinum'){
+    else if (sponsorshipPackage === 'platinum') {
         e[2].classList.remove('packages__features__hide');
-        document.getElementsByClassName('link-regular')[2].classList.add('packages__features__hide');    
+        document.getElementsByClassName('link-regular')[2].classList.add('packages__features__hide');
     }
-    else if(sponsorshipPackage === 'gold'){
+    else if (sponsorshipPackage === 'gold') {
         e[3].classList.remove('packages__features__hide');
         document.getElementsByClassName('link-regular')[3].classList.add('packages__features__hide');
     }
-    else if(sponsorshipPackage === 'silver'){
+    else if (sponsorshipPackage === 'silver') {
         e[4].classList.remove('packages__features__hide');
         document.getElementsByClassName('link-regular')[4].classList.add('packages__features__hide');
     }
-    else if(sponsorshipPackage === 'bronze'){
+    else if (sponsorshipPackage === 'bronze') {
         e[5].classList.remove('packages__features__hide');
         document.getElementsByClassName('link-regular')[5].classList.add('packages__features__hide');
     }
 }
 
-window.toggleHamburger = function() {
-    if(document.getElementsByClassName("hamburger")[0].classList.contains("is-active")) {
+window.toggleHamburger = function () {
+    if (document.getElementsByClassName("hamburger")[0].classList.contains("is-active")) {
         document.getElementsByClassName("hamburger")[0].classList.remove("is-active");
         document.getElementsByClassName("c-navbar")[0].classList.remove("c-navbar__mobile-menu");
         document.getElementById("navbar").classList.remove("c-navbar__sticky");
@@ -63,18 +63,36 @@ window.toggleHamburger = function() {
     }
 }
 
-$(function() {
-    
-        $('.same-page').on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({
-               scrollTop: $($(this).attr('href')).offset().top
-            }, 500, 'linear');
-        });
-    
+$(function () {
+
+    $('.same-page').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 500, 'linear');
+    });
+
 });
 
-window.closeMobMenu = function() {
+window.closeMobMenu = function () {
     document.getElementsByClassName("hamburger")[0].classList.remove("is-active");
     document.getElementsByClassName("c-navbar")[0].classList.remove("c-navbar__mobile-menu");
 }
+
+$('#sponsor-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: true,
+                slidesToShow: 1
+            }
+        }
+    ]
+});

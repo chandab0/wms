@@ -71,6 +71,7 @@
         border: none;
         cursor: pointer;
         margin: 2rem 0;
+        line-height: 4rem;
     }
     
     &:hover {
@@ -92,10 +93,14 @@
     
     &--white {
         background-color: $white;
-        color: $primary;
+        color: $secondary;
 
         &::after {
             background-color: $white;
+        }
+
+        &:hover {
+            color: $secondary;
         }
     }
     
@@ -105,6 +110,10 @@
 
         &::after {
             background-color: $secondary;
+        }
+
+        &:hover {
+            color: $white;
         }
     }
 

@@ -9,6 +9,8 @@
         padding: 6rem;
         h2 {
             @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 700, none, 2rem, 0, left);
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
         }
         h3 {
             @include title('Lato', sans-serif, rgba($light, 0.7), 1.5rem, 0, 700, none, 1rem, 0, left);
