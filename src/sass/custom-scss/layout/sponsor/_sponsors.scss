@@ -1,14 +1,21 @@
 .existing-sponsors {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(1, 20rem);
+    grid-auto-columns: 100%;
+    grid-auto-rows: 25rem;
+    grid-auto-flow: row;
     margin: 0 auto;
     padding-bottom: 5rem;
+    justify-self: center;
+
+    @media only screen and (min-width: $tablet) {
+        grid-auto-columns: 50%;
+        grid-auto-rows: 25rem;
+        grid-auto-flow: column;
+    }
     &__sponsor {
-        margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: 25% 75%;
+        grid-auto-columns: 100%;
+        grid-auto-rows: 40% 60%;
     
         &__header {
             @include title('Lato', sans-serif, rgba($secondary, 0.6), 1.5rem, 0, 400, none, 0.5rem, 0, left);
@@ -20,7 +27,7 @@
         &__logo {
             max-height: 8rem;
             max-width: 12rem;
-            align-self: center;
+            align-self: start;
             justify-self: center;
         }
     }

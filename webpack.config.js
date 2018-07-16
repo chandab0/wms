@@ -91,8 +91,8 @@ module.exports = {
             toType: 'file'
         },
         {
-            from: 'src/Kotler Excellence Medal.pdf',
-            to: 'Kotler Excellence Medal.pdf',
+            from: 'src/Kotler_Excellence_Medal.pdf',
+            to: 'Kotler_Excellence_Medal.pdf',
             toType: 'file'
         }], {})
     ]
