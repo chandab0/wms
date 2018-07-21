@@ -7,11 +7,12 @@ var webpack = require('webpack'),
 
 module.exports = {
     entry: {
+        loader: './src/js/loader.js',
         main: './src/js/index.js'
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: '[hash].js',
+        filename: '[name].[hash].js',
         libraryTarget: 'var',
         library: 'EntryPoint'
     },
