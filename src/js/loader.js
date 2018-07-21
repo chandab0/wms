@@ -1,6 +1,6 @@
 import loader from '../sass/loader.scss';
-paceOptions = {
+var paceOptions = {
     ajax: false, // disabled
     document: true, // disabled
     eventLag: false // disabled
-  };
+};

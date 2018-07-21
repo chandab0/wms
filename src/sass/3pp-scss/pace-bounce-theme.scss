@@ -1,22 +1,29 @@
 /* This is a compiled file, you should be editing the file in the templates directory */
+
 .pace {
     width: 14rem;
     height: 30rem;
     position: fixed;
     top: 30%;
-    right: 45%;
+    right: 35%;
+    @media only screen and (min-width: $mobile) {
+        right: 38%;
+    }
+    @media only screen and (min-width: $tablet) {
+        right: 45%;
+    }
     z-index: 2000;
     transform: scale(0);
     opacity: 0;
     transition: all 2s linear 0s;
-  }
-  
-  .pace.pace-active {
+}
+
+.pace.pace-active {
     transform: scale(.25);
     opacity: 1;
-  }
-  
-  .pace .pace-activity {
+}
+
+.pace .pace-activity {
     width: 14rem;
     height: 14rem;
     border-radius: 7rem;
@@ -25,16 +32,21 @@
     top: 0;
     z-index: 1911;
     animation: pace-bounce 1s infinite;
-  }
-  
-  
-  .pace .pace-progress {
+}
+
+.pace .pace-progress {
     position: absolute;
     display: block;
-    right: 45%;
+    right: 35%;
+    @media only screen and (min-width: $mobile) {
+        right: 38%;
+    }
+    @media only screen and (min-width: $tablet) {
+        right: 45%;
+    }
     bottom: 0;
     z-index: 1910;
-    //margin-left: -30px;
+    margin-left: -30px;
     width: 6rem;
     height: 7.5rem;
     background: rgba(20, 20, 20, .1);
@@ -42,64 +54,63 @@
     border-radius: 3rem / 4rem;
     transform: scaleY(.3) !important;
     animation: pace-compress .5s infinite alternate;
-  }
-  
-  @keyframes pace-bounce {
+}
+
+@keyframes pace-bounce {
     0% {
-      top: 0;
-      animation-timing-function: ease-in;
+        top: 0;
+        animation-timing-function: ease-in;
     }
     50% {
-      top: 14rem;
-      height: 14rem;
-      animation-timing-function: ease-out;
+        top: 14rem;
+        height: 14rem;
+        animation-timing-function: ease-out;
     }
     55% {
-      top: 16rem;
-      height: 12rem;
-      border-radius: 7rem / 6rem;
-      animation-timing-function: ease-in;
+        top: 16rem;
+        height: 12rem;
+        border-radius: 7rem / 6rem;
+        animation-timing-function: ease-in;
     }
     65% {
-      top: 12rem;
-      height: 14rem;
-      border-radius: 7rem;
-      animation-timing-function: ease-out;
+        top: 12rem;
+        height: 14rem;
+        border-radius: 7rem;
+        animation-timing-function: ease-out;
     }
     95% {
-      top: 0;
-      animation-timing-function: ease-in;
+        top: 0;
+        animation-timing-function: ease-in;
     }
     100% {
-      top: 0;
-      animation-timing-function: ease-in;
+        top: 0;
+        animation-timing-function: ease-in;
     }
-  }
-  
-  
-  @keyframes pace-compress {
-    0% {
-      bottom: 0;
-      //margin-left: -30px;
-      width: 6rem;
-      height: 7.5rem;
-      background: rgba(20, 20, 20, .1);
-      box-shadow: 0 0 2rem 3.5rem rgba(20, 20, 20, .1);
-      border-radius: 3rem / 4rem;
-      animation-timing-function: ease-in;
-    }
-    100% {
-      bottom: 3rem;
-      //margin-left: -1rem;
-      width: 2rem;
-      height: 0.5rem;
-      background: rgba(20, 20, 20, .3);
-      box-shadow: 0 0 2rem 3.5rem rgba(20, 20, 20, .3);
-      border-radius: 2rem / 2rem;
-      animation-timing-function: ease-out;
-    }
-  }
+}
 
-  .pace-running > *:not(.pace) {
-    opacity:0;
-  }
+@keyframes pace-compress {
+    0% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 6rem;
+        height: 7.5rem;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0 0 2rem 3.5rem rgba(20, 20, 20, .1);
+        border-radius: 3rem / 4rem;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        bottom: 3rem;
+        margin-left: -1rem;
+        width: 2rem;
+        height: 0.5rem;
+        background: rgba(20, 20, 20, .3);
+        box-shadow: 0 0 2rem 3.5rem rgba(20, 20, 20, .3);
+        border-radius: 2rem / 2rem;
+        animation-timing-function: ease-out;
+    }
+}
+
+.pace-running>*:not(.pace) {
+    opacity: 0;
+}
