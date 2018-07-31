@@ -1,11 +1,11 @@
 .existing-sponsors {
     display: grid;
     grid-auto-columns: 100%;
-    grid-auto-rows: 25rem;
+    grid-auto-rows: 20rem;
     grid-auto-flow: row;
-    margin: 0 auto;
-    padding-bottom: 5rem;
+    margin: 5rem auto;
     justify-self: center;
+    padding: 5 rem auto;
 
     @media only screen and (min-width: $tablet) {
         grid-auto-columns: 50%;

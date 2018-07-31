@@ -79,6 +79,44 @@ window.closeMobMenu = function () {
     document.getElementsByClassName("c-navbar")[0].classList.remove("c-navbar__mobile-menu");
 }
 
+$(document).ready(function () {
+
+
+    $("#sponsorForm").submit(function (event) {
+        window.alert("inside mail send()");
+        $.ajax({
+            url: 'http://suslence.com/wms/sendEmail',
+            method: 'POST',
+            data: {
+                request: {
+                    to: "biswajit.chanda@wms18.com",
+                    subject: "My Subject",
+                    text: "This is the data from form submitted",
+                    html: "<p>This is HTML Data<p>"
+                }
+            },
+            success: function (response) {
+                window.alert('Success');
+            },
+            error: function () {
+                window.alert('Error');
+            },
+            dataType: "json"
+        });
+        event.preventDefault();
+    });
+
+    $(document).on("click", ".packages__pkg-header .c-btn", function () {
+        var pkgName = $(this).data('pkg');
+        console.log(pkgName);
+   });
+
+    $(".submit-button").click(function () {
+        $("#sponsorForm").submit();
+        return false;
+    });
+});
+
 $('#sponsor-carousel').slick({
     dots: true,
     infinite: true,
