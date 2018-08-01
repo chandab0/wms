@@ -35,10 +35,10 @@
         </button>
         <ul>
             <li>
-                <a href="index.html#top" class="same-page" onclick="closeMobMenu()">Home</a>
+                <a href="index.html#top" onclick="closeMobMenu()">Home</a>
             </li>
             <li>
-                <a href="index.html#speaker_list" class="same-page" onclick="closeMobMenu()">Speaker</a>
+                <a href="index.html#speaker_list" onclick="closeMobMenu()">Speaker</a>
             </li>
             <li>
                 <a href="index.html#schedule" onclick="closeMobMenu()">Schedule</a>
@@ -82,8 +82,7 @@
                     <h3 class="packages__pkg-header__name-text">Title Sponsorship</h3>
                     <!--<h3 class="packages__pkg-header__opportunity-text">
                         <strong>2</strong> opportunities</h3>-->
-                    <a class="c-btn c-btn--white" data-toggle="modal" data-target="#submissionFormModal"
-                        data-pkg="Title Sponsorship">Sponsor</a>
+                    <a class="c-btn c-btn--white" data-toggle="modal" data-target="#submissionFormModal" data-pkg="Title Sponsorship">Sponsor</a>
                 </div>
                 <div class="col-1-of-2 packages__features" data-aos="fade-left" data-aos-duration="1200">
                     <h2 class="packages__features__heading">Features</h2>
@@ -360,7 +359,7 @@
             </div>
         </div>
         <div class="modal fade" id="submissionFormModal">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <form id="sponsorForm" action="">
                         <!-- Modal Header -->
@@ -371,7 +370,40 @@
 
                         <!-- Modal body -->
                         <div class="modal-body">
-                            Modal body..
+
+                            <div class="form-group row">
+                                <label for="inputPkg" class="col-md-4 col-form-label">Package</label>
+                                <div class="col-md-8">
+                                    <input readOnly type="name" class="form-control" id="inputPkg" aria-label="Sponsorship Package Name">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputName" class="col-md-4 col-form-label">Name <span class="required">*</span></label>
+                                <div class="col-md-8">
+                                    <input type="name" class="form-control" id="inputName" aria-label="Full Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputEmail" class="col-md-4 col-form-label" aria-label="Email">Email <span class="required">*</span></label>
+                                <div class="col-md-8">
+                                    <input type="email" class="form-control" id="inputEmail" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputContactNo" class="col-md-4 col-form-label" aria-label="Contact Number">Contact Number <span class="required">*</span></label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="inputContactNo" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputMsg" class="col-md-4 col-form-label" aria-label="Message">Message</label>
+                                <div class="col-md-8">
+                                    <textarea rows="5" class="form-control" id="inputMsg"></textarea>
+                                </div>
+                            </div>
+
+
                         </div>
 
                         <!-- Modal footer -->
@@ -403,22 +435,16 @@
     <footer class="footer">
         <header id="contactus" class="header">
             <div class="c-row">
-                <div class="col-1-of-3">
-                    <h2>Contact Us</h2>
-                    <p>Send us your queries at
-                        <a href="mailto:info@wms18.com">info@wms18.com</a>
-                    </p>
-                </div>
 
-                <div class="col-1-of-3">
-                    <h2>For Sponsorship & Registration</h2>
+                <div class="col-1-of-2">
+                    <h2>Sponsorship & Registration</h2>
                     <h3>Mr. Tahir A Bari</h3>
                     <p>Phone: + 91- 8126821464</p>
                     <p>Email:
                         <a href="mailto:tahir.bari@wms18.com">tahir.bari@wms18.com</a>
                     </p>
                 </div>
-                <div class="col-1-of-3">
+                <div class="col-1-of-2">
                     <h2>Reach Out To Us</h2>
                     <h3>Mr. Faisal Ziauddin Siddiqui</h3>
                     <h4>Chief Operating Officer</h4>
@@ -434,6 +460,13 @@
                         <a href="https://www.wms18.com">https://www.wms18.com</a>
                     </p>
                 </div>
+            </div>
+            <div class="c-row">
+
+                    <p style="text-align: center;">Send us your queries at
+                        <a href="mailto:info@wms18.com">info@wms18.com</a>
+                    </p>
+
             </div>
         </header>
         <footer class="footer__copyright">

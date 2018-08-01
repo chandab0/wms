@@ -5,24 +5,45 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
 <url>
   <loc>https://www.wms18.com/</loc>
-  <lastmod>2018-06-28T15:50:29+00:00</lastmod>
+  <lastmod>2018-07-28T10:34:03+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://www.wms18.com/award.html</loc>
+  <lastmod>2018-07-28T10:33:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.wms18.com/medal.html</loc>
+  <lastmod>2018-07-28T10:37:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.wms18.com/sponsor.html</loc>
-  <lastmod>2018-06-28T15:50:29+00:00</lastmod>
+  <lastmod>2018-07-28T10:37:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.wms18.com/wms.html</loc>
+  <lastmod>2018-07-28T10:37:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.wms18.com/speakers.html</loc>
-  <lastmod>2018-06-28T15:50:29+00:00</lastmod>
+  <lastmod>2018-07-28T10:37:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.wms18.com/index.html</loc>
-  <lastmod>2018-06-28T15:50:29+00:00</lastmod>
+  <lastmod>2018-07-28T10:34:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wms18.com/Kotler_Excellence_Medal.pdf</loc>
+  <lastmod>2018-07-28T10:34:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

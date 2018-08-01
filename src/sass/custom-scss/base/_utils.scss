@@ -93,14 +93,14 @@
     
     &--white {
         background-color: $white;
-        color: $secondary!important;
+        color: $primary!important;
 
         &::after {
             background-color: $white;
         }
 
         &:hover {
-            color: $secondary!important;
+            color: $primary!important;
         }
     }
     

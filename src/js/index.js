@@ -83,23 +83,23 @@ $(document).ready(function () {
 
 
     $("#sponsorForm").submit(function (event) {
-        window.alert("inside mail send()");
         $.ajax({
             url: 'http://suslence.com/wms/sendEmail',
             method: 'POST',
             data: {
                 request: {
-                    to: "biswajit.chanda@wms18.com",
-                    subject: "My Subject",
-                    text: "This is the data from form submitted",
-                    html: "<p>This is HTML Data<p>"
+                    to: $('#inputEmail').val(),
+                    subject: $('#inputPkg').val(),
+                    text: $('#inputName').val() + " | " + $('#inputEmail').val() + " | " + $('#inputContactNo').val() + " | " + $('#inputMsg').val(),
+                    html: "<h1>"+$('#inputPkg').val()+"</h1><p>"+$('#inputName').val()+"</p><p>"+$('#inputEmail').val()+"</p><p>"+$('#inputContactNo').val()+"</p><p>"+$('#inputMsg').val()+"</p>"
                 }
             },
             success: function (response) {
-                window.alert('Success');
+                window.alert("Your request is successfully submitted. We'll get back to you shortly");
+                $('#submissionFormModal').modal('toggle');
             },
             error: function () {
-                window.alert('Error');
+                window.alert('Something went wrong. Please try again.');
             },
             dataType: "json"
         });
@@ -108,7 +108,7 @@ $(document).ready(function () {
 
     $(document).on("click", ".packages__pkg-header .c-btn", function () {
         var pkgName = $(this).data('pkg');
-        console.log(pkgName);
+        $("#inputPkg").val(pkgName);
    });
 
     $(".submit-button").click(function () {
