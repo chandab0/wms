@@ -59,6 +59,7 @@
     &:link,
     &:visited {
         text-transform: uppercase;
+        letter-spacing: 0.3rem;
         text-decoration: none;
         padding: 0.5rem 2rem;
         display: inline-block;
@@ -93,14 +94,14 @@
     
     &--white {
         background-color: $white;
-        color: $primary!important;
+        color: $secondary!important;
 
         &::after {
             background-color: $white;
         }
 
         &:hover {
-            color: $primary!important;
+            color: $secondary!important;
         }
     }
     
