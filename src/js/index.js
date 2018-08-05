@@ -84,11 +84,11 @@ $(document).ready(function () {
 
     $("#sponsorForm").submit(function (event) {
         $.ajax({
-            url: 'http://suslence.com/wms/sendEmail',
+            url: 'https://suslence.com/wms/sendEmail',
             method: 'POST',
             data: {
                 request: {
-                    to: $('#inputEmail').val(),
+                    to: "sponsors@wms18.com",
                     subject: $('#inputPkg').val(),
                     text: $('#inputName').val() + " | " + $('#inputEmail').val() + " | " + $('#inputContactNo').val() + " | " + $('#inputMsg').val(),
                     html: "<h1>"+$('#inputPkg').val()+"</h1><p>"+$('#inputName').val()+"</p><p>"+$('#inputEmail').val()+"</p><p>"+$('#inputContactNo').val()+"</p><p>"+$('#inputMsg').val()+"</p>"
