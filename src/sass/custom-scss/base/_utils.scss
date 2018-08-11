@@ -189,3 +189,11 @@ strong {
     height: 100%;
     width: 100%;
 }
+
+
+.for-mobile {
+    transform: translateY(-8rem)!important;
+    @media only screen and (min-width: $tablet) {
+        display: none!important;
+    }
+}
