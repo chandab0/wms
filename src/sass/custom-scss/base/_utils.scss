@@ -61,7 +61,7 @@
         text-transform: uppercase;
         letter-spacing: 0.3rem;
         text-decoration: none;
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 3rem;
         display: inline-block;
         border-radius: 10rem;
         transition: all .2s;
@@ -73,6 +73,7 @@
         cursor: pointer;
         margin: 2rem 0;
         line-height: 4rem;
+        font-weight: 700;
     }
     
     &:hover {

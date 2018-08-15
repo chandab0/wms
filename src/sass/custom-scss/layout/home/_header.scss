@@ -62,16 +62,16 @@
         }
         &__hero-image-1 {
             @include hero-image(center);
-            background-image: linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-1-mobile.jpg);
+            background-image: linear-gradient(120deg, rgba($black, 0.3) 0%, rgba($black, 0.3) 100%), url(../img/hero-image-1-mobile.jpg);
             @media only screen and (min-width: $tablet) {
-                background-image: linear-gradient(120deg, rgba($black, 0.4) 0%, rgba($black, 0.4) 100%), url(../img/hero-image-1-desktop.jpg);
+                background-image: linear-gradient(120deg, rgba($black, 0.3) 0%, rgba($black, 0.3) 100%), url(../img/hero-image-1-desktop.jpg);
             }
         }
         &__hero-image-2 {
             @include hero-image(center);
-            background-image: linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%), url(../img/hero-image-2-mobile.jpg);
+            background-image: linear-gradient(120deg, rgba($black, 0.3) 0%, rgba($black, 0.3) 100%), url(../img/hero-image-2-mobile.jpg);
             @media only screen and (min-width: $tablet) {
-                background-image: linear-gradient(120deg, rgba($black, 0.4) 0%, rgba($black, 0.4) 100%), url(../img/hero-image-2-desktop.jpg);
+                background-image: linear-gradient(120deg, rgba($black, 0.3) 0%, rgba($black, 0.3) 100%), url(../img/hero-image-2-desktop.jpg);
             }
         }
         &__jagged-effect {
@@ -181,11 +181,11 @@
         width: 100%;
     }
     &__header {
-        @include title('Lato', sans-serif, $primary, 1.5rem, 0.2rem, 700, none, 2rem, 0, left);
+        @include title('Lato', sans-serif, $primary, 1.5rem, 0.2rem, 900, none, 2rem, 0, left);
         text-transform: uppercase;
     }
     p {
-        @include title('Lato', sans-serif, $primary, 1.5rem, 0, 300, none, 1rem, 0, left);
+        @include title('Lato', sans-serif, rgba($primary, 0.5), 1.5rem, 0, 400, none, 1rem, 0, left);
         text-transform: uppercase;
         line-height: 1.2rem;
         word-spacing: 0.5rem;
