@@ -73,7 +73,7 @@
         cursor: pointer;
         margin: 2rem 0;
         line-height: 4rem;
-        font-weight: 700;
+        font-weight: 400;
     }
     
     &:hover {
@@ -112,6 +112,19 @@
 
         &::after {
             background-color: $secondary;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &--primary {
+        background-color: $white;
+        color: $primary!important;
+
+        &::after {
+            background-color: $white;
         }
 
         &:hover {
@@ -197,4 +210,8 @@ strong {
     @media only screen and (min-width: $tablet) {
         display: none!important;
     }
+}
+
+figure .hero-1 {
+    background-color: #1f1813;
 }
