@@ -1,12 +1,14 @@
 .award-cat {
     background-color: $light;
     padding: 7rem 1rem;
-
+    @media only screen and (min-width: $laptop) {
+        padding: 7rem 15rem;
+    }
 
     ul li {
         @include title('Lato', sans-serif, $primary, 1.5rem, 0, 400, none, 1rem, 5rem, left);
         padding: 2rem;
-        background-image: url('../img/check.png');
+        background-image: url('../img/check_orange.png');
         background-repeat: no-repeat;
         padding-left: 5rem;
         padding-top: 0;

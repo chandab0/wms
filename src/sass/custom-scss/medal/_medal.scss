@@ -84,6 +84,9 @@
             text-transform: uppercase;
             letter-spacing: 0.2rem;
         }
+        h3 {
+            @include title('Lato', sans-serif, $primary, 1.5rem, 0, 900, none, 2rem, 0, left);
+        }
         p {
             padding-bottom: 3rem;
         }

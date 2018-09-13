@@ -19,6 +19,8 @@
         @media only screen and (min-width: $tablet) {
             max-width: 70%;
         }
-    
+        @media only screen and (min-width: $laptop) {
+            max-width: 60rem;
+        }
     }
 }

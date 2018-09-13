@@ -95,6 +95,16 @@ module.exports = {
             from: 'src/Kotler_Excellence_Medal.pdf',
             to: 'Kotler_Excellence_Medal.pdf',
             toType: 'file'
+        },
+		{
+            from: 'src/WMS_2018.pdf',
+            to: 'WMS_2018.pdf',
+            toType: 'file'
+        },
+		{
+            from: 'src/Kotler_Awards_2018.pdf',
+            to: 'Kotler_Awards_2018.pdf',
+            toType: 'file'
         }], {})
     ]
 };

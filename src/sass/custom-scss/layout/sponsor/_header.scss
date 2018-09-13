@@ -3,6 +3,7 @@
     width: 100%;
     height: 60vh;
     text-align: right;
+    background-color: #212225;
     figure {
         margin: 0;
     }
@@ -21,6 +22,7 @@
         @media only screen and (min-width: $tablet) {
             background-image: /*linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%),*/ url(../img/IMAGE_KA_1.png);
         }
+        filter: grayscale(50%);
     }
     &__title {
         position: absolute;

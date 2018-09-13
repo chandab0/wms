@@ -2,10 +2,14 @@
     background-color: $india-green;
     padding: 7rem 1rem;
 
+    @media only screen and (min-width: $laptop) {
+        padding: 7rem 15rem;
+    }
+
     ul li {
-        @include title('Lato', sans-serif, $white, 1.5rem, 0, 400, none, 1rem, 5rem, left);
+        @include title('Lato', sans-serif, $light-text, 1.5rem, 0, 400, none, 1rem, 5rem, left);
         padding: 2rem;
-        background-image: url('../img/check.png');
+        background-image: url('../img/check_light.png');
         background-repeat: no-repeat;
         padding-left: 5rem;
         padding-top: 0;
