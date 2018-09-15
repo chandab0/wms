@@ -1,7 +1,15 @@
 .side-content {
+    &__nav-placeholder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 8rem;
+        width: 100%;
+        background-color: $secondary;
+    }
     &__menu {
         padding-top: 5rem;
-        @media only screen and (min-width: $laptop) {
+        @media only screen and (min-width: $tablet) {
             position: fixed;
             top: 10rem;
             left: 0;
@@ -25,8 +33,17 @@
         padding: 1rem 2rem;
         margin: 1rem 2rem;
         transition: all 0.5s;
+        position: relative;
+        background: linear-gradient(to right, $secondary 34%, #212225 65%);
+        background-size: 300% 100%;
+        background-position:right bottom;
         &:hover {
-            background-color: $secondary;
+            background-position:left bottom;
         }
+        
+    }
+
+    &__selected-border {
+        border-left: solid 8px $secondary!important;
     }
 }

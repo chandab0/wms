@@ -79,6 +79,12 @@ window.closeMobMenu = function () {
     document.getElementsByClassName("c-navbar")[0].classList.remove("c-navbar__mobile-menu");
 }
 
+window.changeBorderColor = function(id) {
+    console.log("=========");
+    $(".side-content__selected-border").toggleClass("side-content__selected-border");
+    $(id).toggleClass("side-content__selected-border");
+};
+
 $(document).ready(function () {
 
 

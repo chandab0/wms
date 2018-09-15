@@ -63,15 +63,25 @@
     <div class="c-row">
         <div class="col-1-of-4">
             <section class="side-content">
+                <div class="side-content__nav-placeholder"></div>
                 <div class="side-content__menu">
                     <h2>Content</h2>
-                    <a href="#award_history" class="same-page">Award History</a>
-                    <a href="#award_category" class="same-page">Award Category</a>
-                    <a href="#award_dates" class="same-page">Key Award Cycle Dates</a>
-                    <a href="#eval_process" class="same-page">Evaluation Process &amp; Selection</a>
-                    <a href="#nomination_rules" class="same-page">Rules for Nominations</a>
-                    <a href="#application_fees" class="same-page">KME Awards application Fee</a>
-                    <a href="#judging_criteria" class="same-page">Judging Criteria for KME Awards 2018</a>
+                    <a id="award_history_lnk" href="#award_history" class="same-page" onClick="changeBorderColor('#award_history_lnk')">Award
+                        History
+                    </a>
+                    <a id="award_category_lnk" href="#award_category" class="same-page" onClick="changeBorderColor('#award_category_lnk')">Award
+                        Category
+                    </a>
+                    <a id="award_dates_lnk" href="#award_dates" class="same-page" onClick="changeBorderColor('#award_dates_lnk')">Key
+                        Award Cycle Dates</a>
+                    <a id="eval_process_lnk" href="#eval_process" class="same-page" onClick="changeBorderColor('#eval_process_lnk')">Evaluation
+                        Process &amp; Selection</a>
+                    <a id="nomination_rules_lnk" href="#nomination_rules" class="same-page" onClick="changeBorderColor('#nomination_rules_lnk')">Rules
+                        for Nominations</a>
+                    <a id="application_fees_lnk" href="#application_fees" class="same-page" onClick="changeBorderColor('#application_fees_lnk')">KME
+                        Awards application Fee</a>
+                    <a id="judging_criteria_lnk" href="#judging_criteria" class="same-page" onClick="changeBorderColor('#judging_criteria_lnk')">Judging
+                        Criteria for KME Awards 2018</a>
                 </div>
             </section>
         </div>
@@ -80,7 +90,6 @@
                 <figure>
                     <div class="sponsor-header__hero-image">
                     </div>
-                    <img class="sponsor-header__logo" src="./img/web-wms-logo-1024x1024.png" alt="WMS Logo">
                 </figure>
                 <div class="sponsor-header__title">
                     <h1 class="title--main">Kotler Marketing Exellence Award</h1>
@@ -298,9 +307,11 @@
                             </p>
                             <p class="award-info__cat__criteria__cycle-dates__date">&#8377; 25,000</p>
                         </div>
-                        
+
                     </section>
-                    <p style="text-align: center; max-width: 30rem;">The fee covers expenses associated with distribution of applications, review of applications, and development of feedback reports. The fee must accompany the Application Form.</p>
+                    <p style="text-align: center; max-width: 30rem;">The fee covers expenses associated with distribution
+                        of applications, review of applications, and development of feedback reports. The fee must accompany
+                        the Application Form.</p>
 
                 </section>
             </div>
@@ -379,6 +390,55 @@
                     <p>For further details, download the brochure <a href="Kotler_Awards_2018.pdf" class="link-more" aria-label="Brochure download link">here</a>.</p>
                 </section>
             </div>
+            <div class="award-info" id="award__committee">
+                <div class="award-info__cat__criteria">
+                    <h2>Award Committee</h2>
+                    <p><span class="dropcap">T</span>he award judging committee as given below is composed of the academics
+                        and professionals in the field of marketing and contributes to strengthen the competitiveness of
+                        the award assessment by fairly and objectively evaluating and marketing the activities of the applicants.
+                    </p>
+                </div>
+                <section class="award-info__cat committee">
+
+                    <div>
+                        <h3>Prof. Philip Kotler</h3>
+                        <h4>Chairman</h4>
+
+                        <p>S.C. Johnson & Son Professor of International Marketing at the Kellogg School of Management, Northwestern
+                            University, Evanston, Illinois</p>
+                    </div>
+                    <div>
+                        <h3>Prof. Pramod Pathak</h3>
+                        <h4>Co-Chairman</h4>
+                        <p>Professor, Department of Management Studies, IIT(ISM) Dhanbad, India</p>
+                    </div>
+                    <div>
+                        <h3>Prof. Mohammed Naved Khan</h3>
+                        <h4>Member</h4>
+                        <p>Associate Professor of Marketing, Department of Business Administration, AMU, India</p>
+                    </div>
+                    <div>
+                        <h3>Gautam Mahajan</h3>
+                        <h4>Member</h4>
+                        <p>President Customer Value Foundation, India</p>
+                    </div>
+                    <div>
+                        <h3>Walter Vieira</h3>
+                        <h4>Member</h4>
+                        <p>Fellow of the Institute of Management Consultants, India</p>
+                    </div>
+                    <div>
+                        <h3>Prof. Anna Khan</h3>
+                        <h4>Member</h4>
+                        <p>Assistant Professor of Marketing, Imam Abdulrahman Bin Faisal University, Saudi Arabia</p>
+                    </div>
+                    <div>
+                        <h3>Faisal Ziauddin</h3>
+                        <h4>Secretary General</h4>
+                        <p>COO, Suslence Research International Institute (SRIIPL), India</p>
+                    </div>
+                </section>
+            </div>
             <footer class="footer">
                 <header id="contactus" class="header">
                     <div class="c-row">
@@ -403,7 +463,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
 </body>
 
