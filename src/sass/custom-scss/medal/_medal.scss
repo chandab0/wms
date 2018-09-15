@@ -11,7 +11,7 @@
             max-width: 70rem;
         }
         h2 {
-            @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 900, none, 4rem, 0, left);
+            @include title('Lato', sans-serif, $secondary, 1.6rem, 0, 900, none, 4rem, 0, left);
             text-transform: uppercase;
             letter-spacing: 0.2rem;
         }
@@ -40,7 +40,7 @@
             max-width: 70rem;
         }
         h2 {
-            @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 900, none, 4rem, 0, left);
+            @include title('Lato', sans-serif, $secondary, 1.6rem, 0, 900, none, 4rem, 0, left);
             text-transform: uppercase;
             letter-spacing: 0.2rem;
         }
@@ -60,7 +60,7 @@
             max-width: 70rem;
         }
         h2 {
-            @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 900, none, 4rem, 0, left);
+            @include title('Lato', sans-serif, $secondary, 1.6rem, 0, 900, none, 4rem, 0, left);
             text-transform: uppercase;
             letter-spacing: 0.2rem;
         }
@@ -80,18 +80,18 @@
             max-width: 70rem;
         }
         h2 {
-            @include title('Lato', sans-serif, $secondary, 1.5rem, 0, 900, none, 4rem, 0, left);
+            @include title('Lato', sans-serif, $secondary, 1.6rem, 0, 900, none, 4rem, 0, left);
             text-transform: uppercase;
             letter-spacing: 0.2rem;
         }
         h3 {
-            @include title('Lato', sans-serif, $primary, 1.5rem, 0, 900, none, 2rem, 0, left);
+            @include title('Lato', sans-serif, $primary, 1.6rem, 0, 900, none, 2rem, 0, left);
         }
         p {
             padding-bottom: 3rem;
         }
         ul li {
-            @include title('Lato', sans-serif, $primary, 1.5rem, 0, 400, none, 1rem, 5rem, left);
+            @include title('Lato', sans-serif, $primary, 1.6rem, 0, 400, none, 1rem, 5rem, left);
             padding: 1.5rem;
             background-image: url('../img/check.png');
             background-repeat: no-repeat;

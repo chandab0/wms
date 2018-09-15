@@ -61,83 +61,68 @@
         text-transform: uppercase;
         letter-spacing: 0.3rem;
         text-decoration: none;
-        padding: 0.5rem 3rem;
+        padding: 0.3rem 2rem;
         display: inline-block;
-        border-radius: 10rem;
+        border-radius: .25rem;
         transition: all .2s;
         position: relative;
-        font-size: 1.5rem;
-
-        //Change for the <button> element
+        font-size: 1.5rem; //Change for the <button> element
         border: none;
         cursor: pointer;
         margin: 2rem 0;
         line-height: 4rem;
         font-weight: 400;
     }
-    
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($black,.2);
-
+        box-shadow: 0 1rem 2rem rgba($black, .2);
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
     }
-    
     &:active,
     &:focus {
         outline: none;
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($black,.2);
+        box-shadow: 0 .5rem 1rem rgba($black, .2);
     }
-    
     &--white {
         background-color: $white;
-        color: $secondary!important;
-
+        color: $secondary !important;
         &::after {
             background-color: $white;
         }
-
         &:hover {
-            color: $secondary!important;
+            color: $secondary !important;
         }
     }
-    
     &--secondary {
         background-color: $secondary;
         color: $white;
-
         &::after {
             background-color: $secondary;
         }
-
         &:hover {
             color: $white;
         }
     }
-
     &--primary {
         background-color: $white;
-        color: $primary!important;
-
+        color: $primary !important;
         &::after {
             background-color: $white;
         }
-
         &:hover {
             color: $white;
         }
     }
-
     &::after {
         content: "";
         display: inline-block;
         height: 100%;
         width: 100%;
-        border-radius: 10rem;
+        border-radius: .25rem;
         position: absolute;
         top: 0;
         left: 0;
@@ -159,8 +144,8 @@ strong {
 
 .link-more {
     color: $secondary;
-    display: inline;   
-    font-size: 1.6rem; 
+    display: inline;
+    font-size: 1.6rem;
 }
 
 .youtube-container {
@@ -204,14 +189,30 @@ strong {
     width: 100%;
 }
 
-
 .for-mobile {
-    transform: translateY(-8rem)!important;
+    transform: translateY(-8rem) !important;
     @media only screen and (min-width: $tablet) {
-        display: none!important;
+        display: none !important;
     }
 }
 
 figure .hero-1 {
     background-color: #212225;
+}
+
+em {
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    color: $secondary;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.mb-6 {
+    margin-bottom: 6rem!important;
 }

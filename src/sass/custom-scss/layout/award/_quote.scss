@@ -22,7 +22,9 @@
     }
 
     &__quote {
-        @include title('Lato', sans-serif, $primary, 1.5rem, 0, 400, none, 2rem, 0, center);
+        @include title('Lato', sans-serif, $primary, 2.5rem, 0, 300, none, 2rem, 0, center);
+        letter-spacing: .1rem;
+        //word-spacing: .5rem;
     }
     &__author {
         margin-top: 3rem;

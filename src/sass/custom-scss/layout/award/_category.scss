@@ -1,35 +1,81 @@
-.award-cat {
-    background-color: $light;
-    padding: 7rem 1rem;
+.award-info {
     @media only screen and (min-width: $laptop) {
-        padding: 7rem 15rem;
+        max-width: 90rem;
     }
-
-    ul li {
-        @include title('Lato', sans-serif, $primary, 1.5rem, 0, 400, none, 1rem, 5rem, left);
-        padding: 2rem;
-        background-image: url('../img/check_orange.png');
-        background-repeat: no-repeat;
-        padding-left: 5rem;
-        padding-top: 0;
-    }
-    h2 {
-        @include title('Lato',
-        sans-serif,
-        $secondary,
-        1.5rem,
-        0,
-        700,
-        none,
-        1rem,
-        5rem,
-        left);
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-    }
-    ul {
-        vertical-align: middle;
-        list-style: none;
-        padding: 5rem;
+    margin: auto;
+    &__cat {
+        /* Grid Fallback */
+        display: flex;
+        flex-wrap: wrap;
+        /* Supports Grid */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(44rem, 1fr));
+        grid-gap: 1em;
+        padding: 0;
+        margin: 0;
+        align-content: start;
+        justify-content: center;
+        &__criteria {
+            padding: 1rem 6rem;
+            position: relative; //box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+            @media only screen and (min-width: $laptop) {
+                padding: 2rem;
+            }
+            h2 {
+                @include title('Lato', sans-serif, $secondary, 1.6rem, 0, 900, none, 4rem, 0, left);
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+            }
+            h3 {
+                @include title('Lato', sans-serif, $primary, 1.6rem, 0, 900, none, 2rem, 0, left);
+            }
+            p {
+                padding-bottom: 3rem;
+            }
+            ul li {
+                @include title('Lato', sans-serif, $primary, 1.6rem, 0, 400, none, 1rem, 5rem, left);
+                padding: 1.5rem;
+                background-image: url('../img/check.png');
+                background-repeat: no-repeat;
+                padding-left: 5rem;
+                padding-top: 0rem;
+            }
+            ul {
+                vertical-align: middle;
+                list-style: none;
+                padding: 1rem 1rem 4rem 1rem;
+            }
+            &__cycle-dates {
+                /* Grid Fallback */
+                display: flex;
+                flex-wrap: wrap;
+                /* Supports Grid */
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-auto-rows: minmax(10rem, auto);
+                grid-gap: 1em;
+                padding: 0;
+                margin: 0;
+                align-content: start;
+                justify-content: center;
+                &__cycle {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2rem;
+                    color: rgba($primary, 0.3);
+                    padding-bottom: 0 !important;
+                    font-size: 1.4rem;
+                    text-align: center;
+                }
+                &__date {
+                    padding-top: 0.5rem;
+                    font-weight: 700;
+                    text-transform: initial;
+                    letter-spacing: initial;
+                    color: $primary;
+                    text-align: center;
+                }
+            }
+        }
     }
 }

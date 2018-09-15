@@ -7,7 +7,7 @@
     }
 
     ul li {
-        @include title('Lato', sans-serif, $light-text, 1.5rem, 0, 400, none, 1rem, 5rem, left);
+        @include title('Lato', sans-serif, $light-text, 1.6rem, 0, 400, none, 1rem, 5rem, left);
         padding: 2rem;
         background-image: url('../img/check_light.png');
         background-repeat: no-repeat;
@@ -18,7 +18,7 @@
         @include title('Lato',
         sans-serif,
         $white,
-        1.5rem,
+        1.6rem,
         0,
         700,
         none,

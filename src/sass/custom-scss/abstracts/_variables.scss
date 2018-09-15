@@ -1,5 +1,5 @@
 $font-family-base: 'Lato', serif;
-$font-size-base: 1.5rem;
+$font-size-base: 1.6rem;
 $line-height-base: 1.7;
 
 //$primary: #4b443e;
@@ -22,7 +22,7 @@ $secondary: #e88c30;
 $india-green: #3e5902;
 $laccent: #f2b035;
 
-$light : hsl(120, 14%, 91%); 
+$light : #e4ebe4; 
 $lighter: #a6a5a1;
 
 $light-text: hsl(120, 19%, 78%); ;
@@ -37,9 +37,9 @@ $mobile: '335px';
 $tablet: '768px';
 $laptop: '992px';
 $desktop: '1400px';
-$grid-width: 90%;
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
+$grid-width: 100%;
+$gutter-vertical: 0;
+$gutter-vertical-small: 0;
 $gutter-horizontal: 2rem;
 
 $hamburger-layer-color: $white;

@@ -1,10 +1,12 @@
 .award-def {
-    background-color: $secondary;
+    background-color: $laccent;
     padding: 5rem 3rem 9rem 3rem;
     line-height: 3rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    border-top: solid $light 5px;
 
     &__icon {
         margin: 2rem auto;
@@ -12,7 +14,7 @@
     }
 
     &__definition {
-        @include title('Lato', sans-serif, $light, 1.5rem, 0, 400, none, 2rem, 0, center);
+        @include title('Lato', sans-serif, $primary, 1.6rem, 0, 400, none, 2rem, 0, center);
         margin: auto;
         max-width: 95%;
     
