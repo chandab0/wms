@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 5px;
+    height: 2rem;
     width: 200px;
     background: #fff;
     border: 1px solid $secondary;
@@ -37,4 +37,8 @@
   
   .pace.pace-inactive {
     display: none;
+  }
+
+  .pace-running > *:not(.pace) {
+    opacity: 0;
   }

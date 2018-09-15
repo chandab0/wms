@@ -121,5 +121,8 @@
         .hamburger-inner::after {
             background: $secondary;
         }
+        @media only screen and (min-width: $tablet) {
+            display: none !important;
+        }
     }
 }
