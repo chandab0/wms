@@ -1,3 +1,7 @@
+/*
+Author: Saptarshi Basu (https://www.sapbasu.com)
+*/
+
 import style from "../sass/styles.scss";
 import AOS from 'aos';
 
