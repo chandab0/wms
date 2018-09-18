@@ -6,8 +6,8 @@
     background-size: cover;
     background-position: $position;
     backface-visibility: hidden;
-    background-attachment: fixed;
-    mix-blend-mode: lighten;
+    //background-attachment: fixed;
+    mix-blend-mode: multiply;
 }
 
 @mixin title($font-family, $default-font, $color, $font-size, $letter-spacing, $font-weight, $animation, $pad-vertical, $pad-horizontal, $text-align ) {

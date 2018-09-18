@@ -2,10 +2,10 @@
     &--main {
         @include title('Raleway', sans-serif, $white, 3rem, 0, 300, none, 2rem, 0, center);
         @media only screen and (min-width: $tablet) {
-            @include title('Raleway', sans-serif, $white, 4rem, 0, 900, none, 2rem, 0, left);
+            @include title('Raleway', sans-serif, $white, 4rem, 0, 300, none, 2rem, 0, left);
         }
         display: inline-block;
-        border-bottom: solid 2px $white;
+        border-bottom: solid 3px $white;
     }
     &--secondary {
         @include title('Lato', sans-serif, $white, 3rem, 0, 300, none, 1rem, 0, center);

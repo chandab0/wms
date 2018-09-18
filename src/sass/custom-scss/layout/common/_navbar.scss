@@ -1,6 +1,6 @@
 .c-navbar {
-    transition: all 0.5s; //@media only screen and (min-width: $tablet) {
-    border-top: solid 6px $secondary;
+    transition: background-color 0.5s; //@media only screen and (min-width: $tablet) {
+    border-top: solid 10px $secondary;
     background-color: transparent;
     position: absolute;
     top: 0;
@@ -69,8 +69,9 @@
         }
     }
     &__mobile-menu {
-        border-bottom: solid 2px $secondary;
+        //border-bottom: solid 2px $secondary;
         ul li {
+            background-color: rgb(230, 224, 216);
             display: block;
             height: 6rem;
             width: 100%;
