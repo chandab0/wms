@@ -59,6 +59,7 @@ window.toggleHamburger = function () {
         document.getElementsByClassName("c-navbar")[0].classList.remove("c-navbar__mobile-menu");
         document.getElementById("navbar").classList.remove("c-navbar__sticky");
         document.getElementsByClassName("c-navbar__mob-menu-btn")[0].classList.remove("c-navbar__mob-menu-btn-scroll");
+        scrollFunction();
     } else {
         document.getElementsByClassName("hamburger")[0].classList.add("is-active");
         document.getElementsByClassName("c-navbar")[0].classList.add("c-navbar__mobile-menu");
@@ -90,7 +91,7 @@ window.changeBorderColor = function(id) {
 };
 
 $(document).ready(function () {
-
+    scrollFunction();
 
     $("#sponsorForm").submit(function (event) {
         $.ajax({

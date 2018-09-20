@@ -132,7 +132,7 @@
 }
 
 .venue {
-    border-top: solid 10px $india-green;
+    border-top: solid 8px $india-green;
     min-height: 30vh;
     background-color: $light; //rgba($primary, 0.95);
     position: relative;
@@ -179,7 +179,7 @@
     }
     @media only screen and (min-width: $tablet) {
         width: 100%;
-        border: none;
+        border-top: solid 8px $india-green;
     }
     &__header {
         @include title('Lato', sans-serif, $primary, 1.5rem, 0.2rem, 900, none, 2rem, 0, left);

@@ -28,22 +28,25 @@
     a {
         display: block;
         margin: auto;
-        background-color: #212225;
-        color: $light;
-        padding: 1rem 2rem;
-        margin: 1rem 2rem;
+        //background-color: #212225;
+        //color: $light;
+        color: $primary;
+        padding: .5rem 2rem;
+        margin: .5rem 2rem;
         transition: all 0.5s;
         position: relative;
-        background: linear-gradient(to right, $secondary 34%, #212225 65%);
+        //background: linear-gradient(to right, $secondary 34%, #212225 65%);
         background-size: 300% 100%;
         background-position:right bottom;
         &:hover {
-            background-position:left bottom;
+            //background-position:left bottom;
+            color: $secondary;
         }
         
     }
 
     &__selected-border {
-        border-left: solid 8px $secondary!important;
+        //border-left: solid 8px $secondary!important;
+        font-weight: 900;
     }
 }
