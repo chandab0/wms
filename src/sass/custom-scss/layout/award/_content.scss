@@ -24,6 +24,7 @@
         text-transform: uppercase;
         letter-spacing: 0.2rem;
         margin: auto;
+        margin-top: 2rem;
     }
     a {
         display: block;
@@ -36,8 +37,8 @@
         transition: all 0.5s;
         position: relative;
         //background: linear-gradient(to right, $secondary 34%, #212225 65%);
-        background-size: 300% 100%;
-        background-position:right bottom;
+        //background-size: 300% 100%;
+        //background-position:right bottom;
         &:hover {
             //background-position:left bottom;
             color: $secondary;

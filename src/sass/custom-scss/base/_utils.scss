@@ -51,6 +51,11 @@
     @media only screen and (min-width: $tablet) {
         height: 70vh;
         margin: 0;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            position: relative;
+            left: 50rem;
+            width: 40%;   
+         }
     }
 }
 
@@ -180,13 +185,15 @@ strong {
 }*/
 
 .bottom-triangle {
-    clip-path: polygon(100% 80%, 100% 100%, 80% 100%, 100% 80%);
-    background-color: $laccent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        clip-path: polygon(100% 80%, 100% 100%, 80% 100%, 100% 80%);
+        background-color: $laccent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .for-mobile {
@@ -222,5 +229,92 @@ a {
 }
 
 .mb-6 {
-    margin-bottom: 6rem!important;
+    margin-bottom: 6rem !important;
+}
+
+.popup {
+    position: fixed;
+    background-image: linear-gradient(to left, #88d3ce 0%, #6e45e2 100%);
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    @media only screen and (min-width: $mobile) {
+        align-items: center;
+    }
+    flex-direction: column;
+    top: 60vh;
+    height: 40vh;
+    transition: all .3s ease-in;
+    
+    @media only screen and (min-width: $mobile) {
+        top: 70vh;
+        height: 30vh;    
+    }
+
+    @media only screen and (min-width: $tablet) {
+        top: 90vh;
+        height: 10vh;    
+    }
+
+    &__text {
+        color: $white;
+        font-size: 1.6rem;
+        margin: 0 2rem;
+        line-height: 4rem;
+
+        @media only screen and (min-width: $tablet) {
+            margin: 0 6rem;
+        }
+    }
+
+    &__link {
+        color: #6e45e2;
+        font-size: 1.6rem;
+        background-color: white;
+        padding: 2px 1rem;
+        padding-bottom: 3px;
+        @media only screen and (min-width: $tablet) {
+            padding-bottom: 5px;
+        }
+        border-radius: 1rem;
+        margin: .5rem;
+    }
+
+    &__closed {
+        display: none;
+    }
+
+    &__got-it-btn {
+        border-radius: 0;
+        background-color: transparent;
+        color: $white;
+        border: solid 2px $white;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        padding: .1rem 2rem;
+        margin: 1rem 0;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+
+        @media only screen and (min-width: $tablet) {
+            margin: 0 6rem;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $white;
+        }
+
+        &:active,
+        &:focus,
+        &:visited {
+            outline: none;
+            color: $white;
+        }
+    }
 }

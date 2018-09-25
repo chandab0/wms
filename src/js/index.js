@@ -68,6 +68,10 @@ window.toggleHamburger = function () {
     }
 }
 
+window.closePopup = function() {
+    $(".popup").toggleClass("popup__closed")
+}
+
 $(function () {
 
     $('.same-page').on('click', function (e) {

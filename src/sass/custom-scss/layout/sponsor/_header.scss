@@ -19,9 +19,9 @@
     &__hero-image {
         @include hero-image(center);
         background-position: right;
-        background-image: /*linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%),*/ url(../img/IMAGE_KA_1_mobile-bw.jpg);
+        background-image: /*linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%),*/ url(../img/kotleraward_bw_mob.jpg);
         @media only screen and (min-width: $tablet) {
-            background-image: /*linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%),*/ url(../img/IMAGE_KA_1-bw.jpg);
+            background-image: /*linear-gradient(120deg, rgba($primary, 0.5) 0%, rgba($secondary, 0.5) 100%),*/ url(../img/kotleraward_bw.jpg);
             background-position: center;
         }
     }

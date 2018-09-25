@@ -1,7 +1,7 @@
 .c-navbar {
     transition: background-color 0.5s; //@media only screen and (min-width: $tablet) {
     border-top: solid 8px $secondary;
-    background-color: transparent;
+    background-color: rgba(#333, 0.3);
     position: absolute;
     top: 0;
     left: 0;
@@ -30,14 +30,17 @@
             padding: 2.2rem 0;
         }
         a {
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            font-weight: 500;
             &,
             :link,
             :visited,
             :active,
             :focus {
-                margin: 0 2rem;
+                margin: 0 1.3rem;
                 padding: 4rem 0 1rem 0;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 transition: all 0.2s;
                 border-radius: 0 0 5px 5px;
                 position: relative;
@@ -72,7 +75,7 @@
     &__mobile-menu {
         //border-bottom: solid 2px $secondary;
         ul li {
-            background-color: rgb(230, 224, 216);
+            background-color: #eeeaea;
             display: block;
             height: 6rem;
             width: 100%;

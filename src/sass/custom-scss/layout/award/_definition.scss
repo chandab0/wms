@@ -1,10 +1,16 @@
 .award-def {
-    background-color: $laccent;
+    background-color: $light;
     padding: 5rem 3rem 9rem 3rem;
     line-height: 3rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 5rem 2rem;
+    border-radius: 1rem;
+    @media only screen and (min-width: $laptop) {
+        max-width: 100rem;
+        margin: 5rem auto;
+    }
 
     border-top: solid $light 5px;
 
@@ -28,7 +34,7 @@
 }
 
 .bg {
-    background-color: rgb(230, 224, 216);
+    background-color: #eeeaea;
 }
 
 .body-bg {
