@@ -1,0 +1,82 @@
+.timer-container {
+    display: none;
+    @media only screen and (min-width: $desktop) {
+        background-color: $light;
+        background-image: url(../img/clock-small.jpg);
+        background-blend-mode: multiply;
+        height: 50rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__timer {
+        background-image: linear-gradient(to right, rgba($secondary, 0.7) 0%, rgba($white, 0.7) 20%, rgba($white, 0.5) 60%, $white 80%, rgba($india-green, 0.7) 100%);
+        box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        background-color: rgba($white, 0.5);
+        height: 40rem;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        p {
+            align-self: center;
+            justify-self: center;
+            color: $white;
+            font-size: 6rem;
+            font-weight: 300;
+        }
+        p:last-child {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+        }
+        &__day {
+            height: 20rem;
+            background-color: rgba($secondary, .5);
+            width: 15rem;
+            margin: 5rem 2rem;
+            padding: 3rem 1rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+        &__hour {
+            height: 30rem;
+            background-color: rgba($india-green, .5);
+            width: 15rem;
+            margin: 5rem 2rem;
+            padding: 3rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+        &__minute {
+            height: 27rem;
+            background-color: rgba($secondary, .5);
+            width: 15rem;
+            margin: 5rem 2rem;
+            padding: 3rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+        &__second {
+            height: 22rem;
+            background-color: rgba($india-green, .5);
+            width: 15rem;
+            margin: 5rem 2rem;
+            padding: 3rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+    }
+}
