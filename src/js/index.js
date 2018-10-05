@@ -98,7 +98,13 @@ $(document).ready(function () {
     timer();
 
     scrollFunction();
-
+    if(window.innerWidth < 768) {
+        $('.popup').css({ top: (window.innerHeight/100)*75, height: (window.innerHeight/100)*25 });
+    } else if (window.innerWidth < 992) {
+        $('.popup').css({ top: (window.innerHeight/100)*85, height: (window.innerHeight/100)*15 });
+    } else {
+        $('.popup').css({ top: (window.innerHeight/100)*90, height: (window.innerHeight/100)*10 });
+    }
     $("#sponsorForm").submit(function (event) {
         $.ajax({
             url: 'https://suslence.com/wms/sendEmail',

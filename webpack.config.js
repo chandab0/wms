@@ -105,6 +105,11 @@ module.exports = {
             from: 'src/Kotler_Awards_2018.pdf',
             to: 'Kotler_Awards_2018.pdf',
             toType: 'file'
+        },
+        {
+            from: 'src/Sponsorship_Options.pdf',
+            to: 'Sponsorship_Options.pdf',
+            toType: 'file'
         }], {})
     ]
 };
