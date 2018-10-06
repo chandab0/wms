@@ -36,6 +36,20 @@
                 color: $secondary;
             }
         }
+
+        ul {
+            margin: 0;
+
+            li {
+                display: inline-block;
+                padding: 0;
+                margin-right: 2rem;
+
+                img {
+                    width: 3rem;
+                }
+            }
+        }
     }
     footer {
         padding: 2rem 6rem;
